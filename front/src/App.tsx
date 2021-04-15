@@ -12,9 +12,6 @@ import SignUpComplete from "./pages/SignUp/complete";
 import Todo from "./pages/Todo";
 
 const AppLayout = styled.main`
-  min-width: 375px;
-  max-width: 720px;
-  width: 375px;
   margin: 0 auto;
   border: 1px solid #d8d7d7;
   height: 100vh;

@@ -63,6 +63,12 @@ button {
   cursor: pointer;
   -webkit-border-radius: 1px;
   -webkit-apprearance: none;
+  background: inherit;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  overflow: visible;
+  cursor: pointer;
 }
 
 input {
