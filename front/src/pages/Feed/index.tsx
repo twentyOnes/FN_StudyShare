@@ -1,8 +1,12 @@
 import React from "react";
-// import "@/styles/App.scss";
+import Header from "../../components/Header";
 
-const Feed = () => {
-  return <div>피드입니다</div>;
+const Feed: React.FC = () => {
+  return (
+    <div>
+      <Header />
+    </div>
+  );
 };
 
 export default Feed;

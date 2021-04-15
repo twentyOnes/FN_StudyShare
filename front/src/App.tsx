@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Home from "./pages/Home";
 import Feed from "./pages/Feed";
 import Alarm from "./pages/Alarm";
 import Login from "./pages/Login";
@@ -22,13 +21,12 @@ const AppLayout = styled.main`
   padding: 0 20px;
 `;
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <AppLayout>
       <BrowserRouter>
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/feed" component={Feed} />
+          <Route exact path="/" component={Feed} />
           <Route exact path="/alarm" component={Alarm} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/mypage" component={MyPage} />

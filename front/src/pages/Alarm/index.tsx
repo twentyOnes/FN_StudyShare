@@ -1,7 +1,7 @@
 import React from "react";
 // import "@/styles/App.scss";
 
-const Alarm = () => {
+const Alarm: React.FC = () => {
   return <div>일림</div>;
 };
 
