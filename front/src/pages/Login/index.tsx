@@ -2,10 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { LoginForm, Input, Button, LoginLink } from "./styled";
 
-<<<<<<< HEAD
-const Login: React.FC = () => {
-  return <div>로그인</div>;
-=======
 const Login = () => {
   return (
     <LoginForm>
@@ -30,7 +26,6 @@ const Login = () => {
       </div>
     </LoginForm>
   );
->>>>>>> c3870185137c2968292eca0d9a7d763525e40886
 };
 
 export default Login;
