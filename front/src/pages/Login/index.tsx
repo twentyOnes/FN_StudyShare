@@ -9,7 +9,7 @@ import {
   CloseButton,
 } from "./styled";
 
-const Login = ({ children }: any) => {
+const Login: React.FC = () => {
   return (
     <LoginForm>
       <div className="wrap">
