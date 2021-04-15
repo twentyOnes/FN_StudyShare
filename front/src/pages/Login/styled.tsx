@@ -1,16 +1,17 @@
 import styled from "@emotion/styled";
 
-export const LoginForm = styled.main`
+export const LoginForm = styled.section`
   display: grid;
   text-align: center;
   place-items: center;
   min-height: 100vh;
+  position: relative;
 `;
 export const Button = styled.button`
-  width: 81.4%;
+  width: 100%;
   padding: 1em;
   background: #2656ff;
-  border-radius: 4px;
+  border-radius: 8px;
   color: #fff;
   margin-top: 1.5em;
   font-size: 0.87em;
@@ -18,18 +19,22 @@ export const Button = styled.button`
 export const Input = styled.input`
   border: 1px solid #2656ff;
   border-radius: 4px;
-  color: #b6b3b3;
+  color: #a6a6a6;
   font-size: 0.85em;
   padding: 1em;
-  margin-bottom: 1em;
-  width: 74%;
+  width: 100%;
+  box-sizing: border-box;
+  &.id {
+    margin-bottom: 1em;
+  }
 `;
+
 export const LoginLink = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
-  padding: 1.5em 2em;
-  font-size: 0.9rem;
+  margin-top: 20px;
+  font-size: 0.8rem;
   li {
     position: relative;
     a {
@@ -38,5 +43,38 @@ export const LoginLink = styled.ul`
         color: #2656ff;
       }
     }
+    &:nth-child(1) {
+      text-align: left;
+      margin-left: 6px;
+    }
+    &:nth-child(2) {
+      text-align: center;
+      margin-left: 7px;
+      width: 100%;
+    }
+    &:nth-child(3) {
+      text-align: right;
+      margin-right: 6px;
+    }
+  }
+`;
+
+export const Logo = styled.h1`
+  line-height: 0;
+  img {
+    width: 80%;
+    margin-bottom: 1em;
+  }
+`;
+
+export const CloseButton = styled.button`
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: -10px;
+  top: 35px;
+  background-image: "";
+  img {
+    width: 60%;
   }
 `;

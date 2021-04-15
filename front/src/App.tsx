@@ -12,10 +12,14 @@ import SignUpComplete from "./pages/SignUp/complete";
 import Todo from "./pages/Todo";
 
 const AppLayout = styled.main`
+  height: 100vh;
   margin: 0 auto;
   border: 1px solid #d8d7d7;
-  height: 100vh;
-  padding: 0 20px;
+  padding: 0 40px;
+  width: 100%;
+  max-width: 1024px;
+  min-height: 100%;
+  box-sizing: border-box;
 `;
 
 const App: React.FC = () => {
