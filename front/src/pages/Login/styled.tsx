@@ -30,10 +30,10 @@ export const Input = styled.input`
 `;
 
 export const LoginLink = styled.ul`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 1.25em;
   font-size: 0.8rem;
   li {
     position: relative;
@@ -43,26 +43,13 @@ export const LoginLink = styled.ul`
         color: #2656ff;
       }
     }
-    &:nth-child(1) {
-      text-align: left;
-      margin-left: 6px;
-    }
-    &:nth-child(2) {
-      text-align: center;
-      margin-left: 7px;
-      width: 100%;
-    }
-    &:nth-child(3) {
-      text-align: right;
-      margin-right: 6px;
-    }
   }
 `;
 
 export const Logo = styled.h1`
   line-height: 0;
   img {
-    width: 80%;
+    width: 50%;
     margin-bottom: 1em;
   }
 `;
@@ -71,9 +58,8 @@ export const CloseButton = styled.button`
   width: 25px;
   height: 25px;
   position: absolute;
-  right: -10px;
+  right: -3px;
   top: 35px;
-  background-image: "";
   img {
     width: 60%;
   }

@@ -1,14 +1,33 @@
-import React from 'react';
-import Header from '../../components/Header';
-import Fnb from '../../components/Fnb';
-// import "@/styles/App.scss";
+import React from "react";
+import Header from "../../components/Header";
+import Fnb from "../../components/Fnb";
+import { Link } from "react-router-dom";
+import { Setting } from "./styles";
 
+// 환경설정 페이지
 const SetUp: React.FC = () => {
   return (
-    <div>
+    <Setting>
       <Header />
+      <ul>
+        <li>
+          <Link to="/setprofile">
+            프로필 수정하기<span>&gt;</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/complaint">
+            불편신고<span>&gt;</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/">
+            로그아웃<span>&gt;</span>
+          </Link>
+        </li>
+      </ul>
       <Fnb />
-    </div>
+    </Setting>
   );
 };
 

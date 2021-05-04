@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "@emotion/styled";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Start from "./pages/Login/start";
 import Feed from "./pages/Feed";
 import Alarm from "./pages/Alarm";
 import Login from "./pages/Login";
@@ -28,6 +29,7 @@ const App: React.FC = () => {
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={Feed} />
+          <Route exact path="/start" component={Start} />
           <Route exact path="/alarm" component={Alarm} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/mypage" component={MyPage} />

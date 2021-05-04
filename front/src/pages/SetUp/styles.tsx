@@ -5,6 +5,7 @@ const mq = facepaint([
   "@media(min-width: 320px)",
   "@media(min-width: 375px)",
   "@media(min-width: 414px)",
+  "@media(min-width: 720px)",
 ]);
 
 export const Back = styled.div`
@@ -41,6 +42,32 @@ export const Click = styled("button")`
   font-size: 0.875em;
   ${mq({
     textAlign: "center",
-    width: ["40%", "55%", "48%", "42%"],
+    width: ["40%", "55%", "48%", "42%", "26%"],
   })};
+`;
+
+// 환경설정 페이지
+export const Setting = styled.div`
+  ul {
+    position: absolute;
+    width: 100%;
+    margin-left: -1.2em;
+    li {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      padding: 1em 0;
+      &:nth-child(1) {
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+      }
+      a {
+        color: #000000;
+        margin-left: 2.1875em;
+        width: 100%;
+        font-size: 0.875em;
+        span {
+          font-size: 0.5em;
+          margin-left: 1em;
+        }
+      }
+    }
+  }
 `;
