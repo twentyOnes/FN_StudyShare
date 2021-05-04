@@ -14,7 +14,7 @@ const Login: React.FC = () => {
     <LoginForm>
       <div className="wrap">
         <Logo>
-          <img src={process.env.PUBLIC_URL + "/logo.svg"} alt="로고" />
+          <img src={process.env.PUBLIC_URL + "/images/logo.svg"} alt="로고" />
         </Logo>
         <Input placeholder="아이디 입력" name="id" type="id" className="id" />
         <Input placeholder="비밀번호 입력" name="password" type="password" />
@@ -35,7 +35,10 @@ const Login: React.FC = () => {
         </LoginLink>
       </div>
       <CloseButton type="button">
-        <img src={process.env.PUBLIC_URL + "/btn_close.svg"} alt="화면닫기" />
+        <img
+          src={process.env.PUBLIC_URL + "/images/btn_close.svg"}
+          alt="화면닫기"
+        />
       </CloseButton>
     </LoginForm>
   );
