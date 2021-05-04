@@ -1,21 +1,21 @@
-import React from "react";
-import styled from "@emotion/styled";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Feed from "./pages/Feed";
-import Alarm from "./pages/Alarm";
-import Login from "./pages/Login";
-import MyPage from "./pages/MyPage";
-import Profile from "./pages/Profile";
-import SetUp from "./pages/SetUp";
-import SignUp from "./pages/SignUp";
-import SignUpComplete from "./pages/SignUp/complete";
-import Todo from "./pages/Todo";
+import React from 'react';
+import styled from '@emotion/styled';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Feed from './pages/Feed';
+import Alarm from './pages/Alarm';
+import Login from './pages/Login';
+import MyPage from './pages/MyPage';
+import Profile from './pages/Profile';
+import SetUp from './pages/SetUp';
+import SignUp from './pages/SignUp';
+import SignUpComplete from './pages/SignUp/complete';
+import Todo from './pages/Todo';
 
 const AppLayout = styled.main`
   height: 100vh;
   margin: 0 auto;
   border: 1px solid #d8d7d7;
-  padding: 0 40px;
+  padding: 0 20px;
   width: 100%;
   max-width: 1024px;
   min-height: 100%;
