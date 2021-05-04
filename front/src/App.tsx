@@ -1,15 +1,16 @@
-import React from 'react';
-import styled from '@emotion/styled';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Feed from './pages/Feed';
-import Alarm from './pages/Alarm';
-import Login from './pages/Login';
-import MyPage from './pages/MyPage';
-import Profile from './pages/Profile';
-import SetUp from './pages/SetUp';
-import SignUp from './pages/SignUp';
-import SignUpComplete from './pages/SignUp/complete';
-import Todo from './pages/Todo';
+import React from "react";
+import styled from "@emotion/styled";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Feed from "./pages/Feed";
+import Alarm from "./pages/Alarm";
+import Login from "./pages/Login";
+import MyPage from "./pages/MyPage";
+import Profile from "./pages/Profile";
+import SetUp from "./pages/SetUp";
+import Complaint from "./pages/SetUp/complaint";
+import SignUp from "./pages/SignUp";
+import SignUpComplete from "./pages/SignUp/complete";
+import Todo from "./pages/Todo";
 
 const AppLayout = styled.main`
   height: 100vh;
@@ -32,6 +33,7 @@ const App: React.FC = () => {
           <Route exact path="/mypage" component={MyPage} />
           <Route exact path="/profile" component={Profile} />
           <Route exact path="/setup" component={SetUp} />
+          <Route exact path="/complaint" component={Complaint} />
           <Route exact path="/signup" component={SignUp} />
           <Route exact path="/signup/complete" component={SignUpComplete} />
           <Route exact path="/todo" component={Todo} />

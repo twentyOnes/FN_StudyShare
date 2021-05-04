@@ -1,27 +1,42 @@
 import React from "react";
 import Header from "../../components/Header";
 import Fnb from "../../components/Fnb";
-import { Complaint, Submit, Back, TextBox } from "./styles";
+import { Submit, Back, TextBox, Click } from "./styles";
 
 const SetUp: React.FC = () => {
   return (
     <div>
       <Header />
-      <Complaint>
-        <Back>
-          <button type="button">
-            <img
-              src={process.env.PUBLIC_URL + "/images/header_back.svg"}
-              alt="뒤로가기"
+      <Back>
+        <button type="button">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 17 31"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16 30L1 15.5L16 1"
+              stroke="#111111"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
-          </button>
-        </Back>
-        <TextBox type="textarea" className="complaint__text" />
+          </svg>
+        </button>
+      </Back>
+
+      <form>
+        <TextBox />
 
         <Submit>
-          <button type="submit">불편신고 접수하기</button>
+          <Click type="submit" value="Submit">
+            불편신고 접수하기
+          </Click>
         </Submit>
-      </Complaint>
+      </form>
+
       <Fnb />
     </div>
   );

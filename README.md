@@ -14,13 +14,10 @@
 - emotion (css-in-js)
 - typescript
 - react
-- antd
-- redux
-- redux-saga
+- Apollo
 - HTML Sementic MarkUp
 - 반응형 view port 단위 사용
 
-## 🧑🏻‍💻 백앤드 기술스택
 
 <br>
 

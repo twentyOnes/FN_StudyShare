@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 // 공통 헤더
-export const HeaderLayout = styled.header`
+export const AlarmHeader = styled.header`
   position: fixed;
   top: 0;
   left: 0;
@@ -35,7 +35,7 @@ export const Title = styled.h1`
 `;
 
 // 알림 페이지 헤더
-export const AlarmHeader = styled.header`
+export const HeaderLayout = styled.header`
   display: flex;
   width: 100%;
   justify-content: space-between;
