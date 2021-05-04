@@ -1,8 +1,16 @@
-import React from "react";
+import React from 'react';
+import Header from '../../components/Header';
+import Fnb from '../../components/Fnb';
 // import "@/styles/App.scss";
 
 const Todo: React.FC = () => {
-  return <div>투두리스트</div>;
+  return (
+    <div>
+      {' '}
+      <Header />
+      <Fnb />
+    </div>
+  );
 };
 
 export default Todo;

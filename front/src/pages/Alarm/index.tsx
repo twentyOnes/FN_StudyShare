@@ -1,8 +1,12 @@
-import React from "react";
-// import "@/styles/App.scss";
+import React from 'react';
+import AlarmHeader from '@src/components/Header/Alarm';
 
 const Alarm: React.FC = () => {
-  return <div>일림</div>;
+  return (
+    <div>
+      <AlarmHeader title="알림" />
+    </div>
+  );
 };
 
 export default Alarm;

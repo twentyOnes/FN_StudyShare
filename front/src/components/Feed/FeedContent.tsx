@@ -1,5 +1,4 @@
-import React from "react";
-// import "@/styles/App.scss";
+import React from 'react';
 
 const FeedContent = () => {
   return <div></div>;

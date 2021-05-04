@@ -9,7 +9,7 @@ const Footer = styled.footer`
   bottom: 0;
   z-index: 10;
   background: #fff;
-  padding: 0.825em 0;
+  padding: 0.325em 0;
   box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.04);
 `;
 

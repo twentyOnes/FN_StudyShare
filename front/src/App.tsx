@@ -14,7 +14,6 @@ import Todo from './pages/Todo';
 const AppLayout = styled.main`
   height: 100vh;
   margin: 0 auto;
-  border: 1px solid #d8d7d7;
   padding: 0 20px;
   width: 100%;
   max-width: 1024px;

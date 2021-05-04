@@ -1,8 +1,14 @@
-import React from "react";
-// import "@/styles/App.scss";
+import React from 'react';
+import Header from '../../components/Header';
+import Fnb from '../../components/Fnb';
 
 const MyPage: React.FC = () => {
-  return <div>마이페이지</div>;
+  return (
+    <div>
+      <Header />
+      <Fnb />
+    </div>
+  );
 };
 
 export default MyPage;
