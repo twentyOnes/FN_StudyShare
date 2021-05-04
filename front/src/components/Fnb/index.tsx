@@ -1,33 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import styled from "@emotion/styled";
-
-const Footer = styled.footer`
-  position: fixed;
-  width: 100%;
-  left: 0;
-  bottom: 0;
-  z-index: 10;
-  background: #fff;
-  padding: 0.325em 0;
-  box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.04);
-`;
-
-const FooterWrap = styled.div`
-  max-width: 700px;
-  margin: 0 auto;
-  width: 100%;
-  display: flex;
-  height: 50px;
-  align-items: center;
-  justify-content: space-evenly;
-  img {
-    width: 80%;
-    .sizeMiss {
-      width: 70% !important;
-    }
-  }
-`;
+import { Footer, FooterWrap } from "./styles";
 
 const Fnb: React.FC = () => {
   return (
@@ -35,22 +8,46 @@ const Fnb: React.FC = () => {
       <Footer>
         <FooterWrap>
           <NavLink to="/" activeClassName="active" exact>
-            <img
-              src={process.env.PUBLIC_URL + "/images/nav01.svg"}
-              alt="홈피드"
-            />
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 34 29"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.6668 28.3333V18.3333H20.3335V28.3333H28.6668V15H33.6668L17.0002 0L0.333496 15H5.3335V28.3333H13.6668Z"
+                fill="#999999"
+              />
+            </svg>
           </NavLink>
           <NavLink to="/todo" activeClassName="active" exact>
-            <img
-              src={process.env.PUBLIC_URL + "/images/nav02.svg"}
-              alt="투두리스트"
-            />
+            <svg
+              width="25"
+              height="25"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M28.3333 16.6667H1.66667C0.75 16.6667 0 17.4167 0 18.3333V28.3333C0 29.25 0.75 30 1.66667 30H28.3333C29.25 30 30 29.25 30 28.3333V18.3333C30 17.4167 29.25 16.6667 28.3333 16.6667ZM6.66667 26.6667C4.83333 26.6667 3.33333 25.1667 3.33333 23.3333C3.33333 21.5 4.83333 20 6.66667 20C8.5 20 10 21.5 10 23.3333C10 25.1667 8.5 26.6667 6.66667 26.6667ZM28.3333 0H1.66667C0.75 0 0 0.75 0 1.66667V11.6667C0 12.5833 0.75 13.3333 1.66667 13.3333H28.3333C29.25 13.3333 30 12.5833 30 11.6667V1.66667C30 0.75 29.25 0 28.3333 0ZM6.66667 10C4.83333 10 3.33333 8.5 3.33333 6.66667C3.33333 4.83333 4.83333 3.33333 6.66667 3.33333C8.5 3.33333 10 4.83333 10 6.66667C10 8.5 8.5 10 6.66667 10Z"
+                fill="#999999"
+              />
+            </svg>
           </NavLink>
           <NavLink to="/profile" activeClassName="active" exact>
-            <img
-              src={process.env.PUBLIC_URL + "/images/nav03.svg"}
-              alt="마이페이지"
-            />
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 34 34"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.0002 0.333008C7.80016 0.333008 0.333496 7.79967 0.333496 16.9997C0.333496 26.1997 7.80016 33.6663 17.0002 33.6663C26.2002 33.6663 33.6668 26.1997 33.6668 16.9997C33.6668 7.79967 26.2002 0.333008 17.0002 0.333008ZM17.0002 5.33301C19.7668 5.33301 22.0002 7.56634 22.0002 10.333C22.0002 13.0997 19.7668 15.333 17.0002 15.333C14.2335 15.333 12.0002 13.0997 12.0002 10.333C12.0002 7.56634 14.2335 5.33301 17.0002 5.33301ZM17.0002 28.9997C12.8335 28.9997 9.15016 26.8663 7.00016 23.633C7.05016 20.3163 13.6668 18.4997 17.0002 18.4997C20.3168 18.4997 26.9502 20.3163 27.0002 23.633C24.8502 26.8663 21.1668 28.9997 17.0002 28.9997Z"
+                fill="#999999"
+              />
+            </svg>
           </NavLink>
           <NavLink to="/setup" activeClassName="active" exact>
             <svg
