@@ -19,6 +19,8 @@ export const Profile = styled.div`
   border: 1px solid #1b1b1b;
   border-radius: 50%;
   margin-right: 0.625em;
+  overflow:hidden;
+
   span {
     align-items: center;
     justify-content: center;
