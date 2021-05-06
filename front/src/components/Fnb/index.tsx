@@ -35,7 +35,7 @@ const Fnb: React.FC = () => {
               />
             </svg>
           </NavLink>
-          <NavLink to="/profile" activeClassName="active" exact>
+          <NavLink to="/mypage" activeClassName="active" exact>
             <svg
               width="30"
               height="30"

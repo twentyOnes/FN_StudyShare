@@ -1,19 +1,19 @@
 import React from 'react';
-import { Coment, Profile } from './styles';
+import { Comment, Profile } from './styles';
 
 type Props = {
   nickname: string;
   text: string;
   time: number;
   like: number;
-  coment: number;
+  comment: number;
   className?: string;
 };
 
 // eslint-disable-next-line
-const FeedComent = ({ nickname, text, time, like, coment, className = 'replayComment' }: Props) => {
+const FeedComment = ({ nickname, text, time, like, comment, className = 'replayComment' }: Props) => {
   return (
-    <Coment>
+    <Comment>
       <Profile>
         <img src={process.env.PUBLIC_URL + '/images/frodo.jpg'} alt="프로도" />
       </Profile>
@@ -52,11 +52,11 @@ const FeedComent = ({ nickname, text, time, like, coment, className = 'replayCom
         </div>
 
         <div className={className}>
-          <button type="button">답글 {coment}개 보기</button>
+          <button type="button">답글 {comment}개 보기</button>
         </div>
       </div>
-    </Coment>
+    </Comment>
   );
 };
 
-export default FeedComent;
+export default FeedComment;

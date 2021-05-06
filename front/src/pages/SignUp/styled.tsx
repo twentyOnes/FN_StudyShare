@@ -18,7 +18,6 @@ export const CompleteWrap = styled.div`
     }
   }
 `;
-
 export const Button = styled.button`
   width: 100%;
   padding: 1em;
@@ -28,7 +27,6 @@ export const Button = styled.button`
   font-size: 1em;
   font-weight: 700;
 `;
-
 // 회원가입 페이지
 export const Header = styled.header`
   margin-top: 2em;
@@ -51,7 +49,6 @@ export const Header = styled.header`
     }
   }
 `;
-
 export const InputWrap = styled.div`
   width: 100%;
   margin-bottom: 20px;
@@ -61,14 +58,12 @@ export const InputWrap = styled.div`
     margin-bottom: 1em;
   }
 `;
-
 export const Input = styled.input`
   border-radius: 4px;
   border: 1px solid #2656ff;
   padding: 13px;
   font-size: 0.9em;
 `;
-
 export const InputButton = styled.button`
   background: #2656ff;
   color: #fff;
@@ -76,7 +71,6 @@ export const InputButton = styled.button`
   padding: 13px;
   border-radius: 4px;
 `;
-
 export const SignButton = styled.button`
   background: #c4c4c4;
   color: #fff;

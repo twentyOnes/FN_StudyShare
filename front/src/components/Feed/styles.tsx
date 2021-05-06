@@ -1,4 +1,14 @@
-import styled from '@emotion/styled';
+import styled from "@emotion/styled";
+import facepaint from "facepaint";
+
+//디바이스 미디어쿼리
+const mq = facepaint([
+  "@media(min-width: 320px)",
+  "@media(min-width: 375px)",
+  "@media(min-width: 414px)",
+  "@media(min-width: 720px)",
+  "@media(min-width: 1024px)",
+]);
 
 // 피드 헤더
 export const Head = styled.header`
@@ -150,7 +160,7 @@ export const Text = styled.div`
 export const CommentMore = styled.button`
   cursor: pointer;
   margin-top: 0.6em;
-  margin-bottom: 1.1875em;
+  margin-bottom: 0.5625em;
   span {
     color: #c4c4c4;
     font-size: 0.9em;
@@ -158,10 +168,19 @@ export const CommentMore = styled.button`
 `;
 
 //피드 댓글창
-export const Coment = styled.div`
+export const Comment = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: 0.5fr 4fr;
+  padding-top: 0.625em;
+  ${mq({
+    gridTemplateColumns: [
+      "0.5fr 4fr",
+      "0.5fr 4fr",
+      "0.2fr 4fr",
+      "0.2fr 4fr",
+      "0.2fr 4fr",
+    ],
+  })};
   .comment {
     .user {
       h2 {
@@ -178,6 +197,12 @@ export const Coment = styled.div`
         display: flex;
         justify-content: space-between;
         padding-top: 0.3em;
+        button {
+          height: 100%;
+        }
+        p {
+          padding-right: 1em;
+        }
       }
       &__more {
         display: flex;
@@ -207,7 +232,7 @@ export const Coment = styled.div`
         color: #c4c4c4;
         font-size: 0.8em;
         &:before {
-          content: '';
+          content: "";
           display: inline-block;
           margin: 4px 12px 3.5px 0;
           width: 48px;
@@ -224,7 +249,19 @@ export const Coment = styled.div`
   }
 `;
 
+// 대댓글
 export const ReplayComent = styled.div`
   display: grid;
-  grid-template-columns: 0.5fr 4fr;
+  ${mq({
+    gridTemplateColumns: [
+      "0.6fr 4fr",
+      "0.6fr 4fr",
+      "0.6fr 4fr",
+      "0.5fr 4fr",
+      "0.2fr 4fr",
+    ],
+  })};
 `;
+
+// 대댓글
+export const CommentInput = styled.div``;

@@ -28,7 +28,6 @@ export const Input = styled.input`
     margin-bottom: 1em;
   }
 `;
-
 export const LoginLink = styled.ul`
   display: flex;
   justify-content: space-between;
@@ -45,7 +44,6 @@ export const LoginLink = styled.ul`
     }
   }
 `;
-
 export const Logo = styled.h1`
   line-height: 0;
   img {
@@ -53,7 +51,6 @@ export const Logo = styled.h1`
     margin-bottom: 1em;
   }
 `;
-
 export const CloseButton = styled.button`
   width: 25px;
   height: 25px;

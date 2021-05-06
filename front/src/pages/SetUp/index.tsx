@@ -9,9 +9,10 @@ const SetUp: React.FC = () => {
   return (
     <Setting>
       <Header />
+
       <ul>
         <li>
-          <Link to="/setprofile">
+          <Link to="/profile">
             프로필 수정하기<span>&gt;</span>
           </Link>
         </li>
