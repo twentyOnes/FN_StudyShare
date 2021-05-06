@@ -1,38 +1,31 @@
-import React from "react";
-import Slider from "react-slick";
+import React from 'react';
+import Slider from 'react-slick';
+import { FeedImg } from './styles';
 
-const FeedSlider = () => {
+const FeedSlider: React.FC = () => {
   const settings = {
     dots: true,
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
-    // nextArrow: <SampleNextArrow />,
-    // prevArrow: <SamplePrevArrow />
+    initialSlide: 0,
+    arrows: true,
   };
+
   return (
-    <div>
+    <FeedImg>
       <Slider {...settings}>
         <div>
-          <h3>1</h3>
+          <img src={process.env.PUBLIC_URL + '/images/slider01.jpg'} alt="" />
         </div>
         <div>
-          <h3>2</h3>
+          <img src={process.env.PUBLIC_URL + '/images/slider01.jpg'} alt="" />
         </div>
         <div>
-          <h3>3</h3>
-        </div>
-        <div>
-          <h3>4</h3>
-        </div>
-        <div>
-          <h3>5</h3>
-        </div>
-        <div>
-          <h3>6</h3>
+          <img src={process.env.PUBLIC_URL + '/images/slider01.jpg'} alt="" />
         </div>
       </Slider>
-    </div>
+    </FeedImg>
   );
 };
 

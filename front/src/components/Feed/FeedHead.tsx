@@ -1,29 +1,24 @@
-import React from "react";
-import { Head, Profile, Nickname, MoreBtn } from "./styles";
-import { Avatar } from "antd";
-import { UserOutlined } from "@ant-design/icons";
+import React from 'react';
+import { Head, Profile, Nickname, MoreBtn } from './styles';
 
 type Props = {
-  id: string;
+  nickname?: string;
 };
 
-// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
-const FeedHead = ({ id }: Props) => {
+// eslint-disable-next-line
+const FeedHead = ({ nickname }: Props) => {
   return (
     <div>
       <Head>
         <div className="left">
           <Profile>
-            <Avatar icon={<UserOutlined />} />
+            <img src={process.env.PUBLIC_URL + '/images/peach.jpg'} alt="어피치" />
           </Profile>
-          <Nickname>{id}</Nickname>
+          <Nickname>{nickname}</Nickname>
         </div>
 
         <MoreBtn>
-          <img
-            src={process.env.PUBLIC_URL + "/images/btn_more.svg"}
-            alt="더보기"
-          />
+          <img src={process.env.PUBLIC_URL + '/images/btn_more.svg'} alt="더보기" />
         </MoreBtn>
       </Head>
     </div>
