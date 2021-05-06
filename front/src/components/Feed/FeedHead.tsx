@@ -14,7 +14,7 @@ const FeedHead = ({ nickname }: Props) => {
           <Profile>
             <img src={process.env.PUBLIC_URL + '/images/peach.jpg'} alt="어피치" />
           </Profile>
-          <Nickname>{nickname}</Nickname>
+          <Nickname>@{nickname}</Nickname>
         </div>
 
         <MoreBtn>
