@@ -17,6 +17,7 @@ export const Profile = styled.p`
   img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
   }
 `;
 
@@ -24,6 +25,7 @@ export const Alarm = styled.a`
   display: inline-flex;
   width: 100%;
   padding: 0.6em 0;
+  cursor: pointer;
   section {
     width: 100%;
     h4 {
@@ -44,6 +46,7 @@ export const Alarm = styled.a`
 `;
 
 export const Icon = styled.div`
+  text-align: center;
   width: 39.06px;
   height: 30px;
   overflow: hidden;

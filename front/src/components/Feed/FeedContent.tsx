@@ -4,9 +4,9 @@ import FeedSlider from './FeedSlider';
 import FeedCmHead from './FeedCmHead';
 import FeedDesc from './FeedDesc';
 import { Feed } from './styles';
+import FeedCmInput from './FeedCmInput';
 
-// 피드 게시글
-
+// 하나의 피드 게시글
 const FeedContent: React.FC = () => {
   return (
     <Feed>
@@ -14,6 +14,7 @@ const FeedContent: React.FC = () => {
       <FeedSlider />
       <FeedCmHead like={1000} time={50} />
       <FeedDesc text="내일부터 시월 십칠일까지 고1 쎈 끝낼수 있을까 무조건 해야된다 진짜 갓생살자" />
+      <FeedCmInput />
     </Feed>
   );
 };

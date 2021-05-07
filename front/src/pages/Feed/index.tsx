@@ -5,13 +5,7 @@ import Fnb from '../../components/Fnb';
 import FeedContent from '../../components/Feed/FeedContent';
 
 const FeedLayout = styled.section`
-  overflow-y: scroll;
-  height: 100vh;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  &::-webkit-scrollbar {
-    display: none;
-  }
+  margin-bottom: 10vh;
 `;
 
 const Feed: React.FC = () => {

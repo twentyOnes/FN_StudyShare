@@ -2,6 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import { FeedImg } from './styles';
 
+//피드 슬라이드 이미지
 const FeedSlider: React.FC = () => {
   const settings = {
     dots: true,

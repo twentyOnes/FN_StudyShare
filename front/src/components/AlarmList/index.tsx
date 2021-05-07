@@ -7,6 +7,9 @@ type Props = {
   text: string;
 };
 
+const date: Date = new Date();
+console.log('Date = ' + date);
+
 // eslint-disable-next-line
 const AlarmList = ({ date, nickname, text }: Props) => {
   return (

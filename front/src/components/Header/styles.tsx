@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 // 공통 헤더
 export const AlarmHeader = styled.header`
@@ -52,7 +52,7 @@ export const Buttons = styled.div`
   img {
     width: 70%;
   }
-  button:nth-child(2) {
-    margin-left: 1.25em;
+  .alarm {
+    margin-left: 1em;
   }
 `;

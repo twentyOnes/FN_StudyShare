@@ -1,10 +1,21 @@
-import React from "react";
-import { CommentInput } from "./styles";
+import React from 'react';
+import { CommentInput, Profile, Input, Button, InputWrap } from './styles';
 
-// 피드 게시글 좋아요 + 댓글 + 답글
+// 피드 댓글창
 // eslint-disable-next-line
 const FeedCmInput = () => {
-  return <CommentInput></CommentInput>;
+  return (
+    <CommentInput>
+      <Profile>
+        <img src={process.env.PUBLIC_URL + '/images/rupy.png'} alt="프로도" />
+      </Profile>
+
+      <InputWrap>
+        <Input type="text" placeholder="댓글달기..." />
+        <Button>게시</Button>
+      </InputWrap>
+    </CommentInput>
+  );
 };
 
 export default FeedCmInput;

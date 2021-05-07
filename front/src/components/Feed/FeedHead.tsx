@@ -5,6 +5,7 @@ type Props = {
   nickname?: string;
 };
 
+//피드 글 작성자
 // eslint-disable-next-line
 const FeedHead = ({ nickname }: Props) => {
   return (
