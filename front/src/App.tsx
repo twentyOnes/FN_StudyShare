@@ -20,7 +20,11 @@ const AppLayout = styled.main`
   width: 100%;
   max-width: 1024px;
   min-height: 100%;
+  overflow-y: scroll;
   box-sizing: border-box;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 const App: React.FC = () => {

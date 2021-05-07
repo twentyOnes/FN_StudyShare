@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 // 뒤로가기 버튼
 export const Back = styled.div`
@@ -49,7 +49,9 @@ export const InputWrap = styled.form`
     box-sizing: border-box;
     border-radius: 5px;
     height: 1.875em;
-    padding: 1em;
+    padding: 1.2em;
+    box-shadow: none;
+    text-shadow: none;
   }
 
   button {
