@@ -16,7 +16,7 @@ export const AlarmHeader = styled.header`
 `;
 
 export const AlarmWrap = styled.div`
-  max-width: 700px;
+  max-width: 1024px;
   margin: 0 auto;
   width: 100%;
 `;
@@ -35,7 +35,7 @@ export const HeaderLayout = styled.header`
 `;
 
 export const HeaderWrap = styled.div`
-  max-width: 700px;
+  max-width: 1024px;
   margin: 0 auto;
   width: 100%;
   display: flex;
