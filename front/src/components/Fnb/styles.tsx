@@ -12,7 +12,7 @@ export const Footer = styled.footer`
 `;
 
 export const FooterWrap = styled.div`
-  max-width: 700px;
+  max-width: 1024px;
   margin: 0 auto;
   width: 100%;
   display: flex;

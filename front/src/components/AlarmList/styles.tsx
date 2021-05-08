@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const AlarmBox = styled.section`
-  max-width: 700px;
+  max-width: 1024px;
   margin: 0 auto;
   width: 100%;
   padding-top: 1em;
