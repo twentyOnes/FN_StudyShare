@@ -1,10 +1,10 @@
-import styled from '@emotion/styled';
+import styled from "@emotion/styled";
 
 export const AlarmBox = styled.section`
   max-width: 700px;
   margin: 0 auto;
   width: 100%;
-  padding-top: 11vh;
+  padding-top: 1em;
 `;
 
 export const Profile = styled.p`

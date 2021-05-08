@@ -1,13 +1,13 @@
-import styled from '@emotion/styled';
-import facepaint from 'facepaint';
+import styled from "@emotion/styled";
+import facepaint from "facepaint";
 
 //디바이스 미디어쿼리
 const mq = facepaint([
-  '@media(min-width: 320px)',
-  '@media(min-width: 375px)',
-  '@media(min-width: 414px)',
-  '@media(min-width: 720px)',
-  '@media(min-width: 1024px)',
+  "@media(min-width: 320px)",
+  "@media(min-width: 375px)",
+  "@media(min-width: 414px)",
+  "@media(min-width: 720px)",
+  "@media(min-width: 1024px)",
 ]);
 
 // 피드 헤더
@@ -85,7 +85,7 @@ export const FeedImg = styled.div`
     margin: 0 !important;
   }
   .slick-arrow {
-    z-index: 100;
+    z-index: 10;
   }
   .slick-prev {
     left: 12px;
@@ -174,7 +174,13 @@ export const Comment = styled.div`
   display: grid;
   padding-top: 0.625em;
   ${mq({
-    gridTemplateColumns: ['0.5fr 4fr', '0.5fr 4fr', '0.2fr 4fr', '0.2fr 4fr', '0.2fr 4fr'],
+    gridTemplateColumns: [
+      "0.5fr 4fr",
+      "0.5fr 4fr",
+      "0.2fr 4fr",
+      "0.2fr 4fr",
+      "0.2fr 4fr",
+    ],
   })};
   .comment {
     .user {
@@ -227,7 +233,7 @@ export const Comment = styled.div`
         color: #c4c4c4;
         font-size: 0.8em;
         &:before {
-          content: '';
+          content: "";
           display: inline-block;
           margin: 4px 12px 3.5px 0;
           width: 48px;
@@ -248,7 +254,13 @@ export const Comment = styled.div`
 export const ReplayComent = styled.div`
   display: grid;
   ${mq({
-    gridTemplateColumns: ['0.6fr 4fr', '0.6fr 4fr', '0.6fr 4fr', '0.5fr 4fr', '0.2fr 4fr'],
+    gridTemplateColumns: [
+      "0.6fr 4fr",
+      "0.6fr 4fr",
+      "0.6fr 4fr",
+      "0.5fr 4fr",
+      "0.2fr 4fr",
+    ],
   })};
 `;
 
@@ -280,6 +292,6 @@ export const Input = styled.input`
 export const Button = styled.button`
   position: absolute;
   right: 11px;
-  top: 9px;
+  top: 11px;
   color: #2656ff;
 `;

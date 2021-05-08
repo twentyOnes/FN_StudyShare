@@ -1,15 +1,17 @@
-import styled from '@emotion/styled';
+import styled from "@emotion/styled";
 
-// 공통 헤더
+// 알림 페이지 헤더
 export const AlarmHeader = styled.header`
-  position: fixed;
+  position: sticky;
   top: 0;
+  width: 101%;
   left: 0;
-  display: flex;
-  width: 100%;
+  margin-left: -1.3em;
   vertical-align: middle;
   background: #ffffff;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.04);
+  padding: 1em;
+  z-index: 100;
+  box-shadow: 0px 4px 10px rgb(0 0 0 / 4%);
   padding: 1em;
 `;
 
@@ -17,6 +19,27 @@ export const AlarmWrap = styled.div`
   max-width: 700px;
   margin: 0 auto;
   width: 100%;
+`;
+
+// 공통 헤더
+export const HeaderLayout = styled.header`
+  position: sticky;
+  width: 100%;
+  margin-left: -1.3em;
+  top: 0;
+  left: 0;
+  vertical-align: middle;
+  background: #ffffff;
+  padding: 1em;
+  z-index: 100;
+`;
+
+export const HeaderWrap = styled.div`
+  max-width: 700px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 `;
 
 export const Back = styled.button`
@@ -34,15 +57,8 @@ export const Title = styled.h1`
   display: inline-block;
 `;
 
-// 알림 페이지 헤더
-export const HeaderLayout = styled.header`
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  padding: 0.9375em 0;
-  line-height: 0;
-`;
 export const Logo = styled.h1`
+  line-height: 0;
   img {
     width: 70%;
   }

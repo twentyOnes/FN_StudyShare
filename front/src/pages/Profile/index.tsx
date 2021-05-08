@@ -1,7 +1,7 @@
-import React from 'react';
-import Header from '../../components/Header';
-import Fnb from '../../components/Fnb';
-import { ProfileImg, ProfileWrap, InputWrap, Back } from './styles';
+import React from "react";
+import Header from "../../components/Header";
+import Fnb from "../../components/Fnb";
+import { ProfileImg, ProfileWrap, InputWrap, Back } from "./styles";
 
 const Profile: React.FC = () => {
   return (
@@ -9,14 +9,32 @@ const Profile: React.FC = () => {
       <Header />
       <Back>
         <button type="button">
-          <svg width="20" height="20" viewBox="0 0 17 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M16 30L1 15.5L16 1" stroke="#111111" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 17 31"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16 30L1 15.5L16 1"
+              stroke="#111111"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
           </svg>
         </button>
       </Back>
       <ProfileWrap>
-        <ProfileImg> 
-          <svg width="37" height="37" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ProfileImg>
+          <svg
+            width="37"
+            height="37"
+            viewBox="0 0 74 74"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <circle cx="37" cy="37" r="37" fill="#999999" />
             <path
               d="M36.5 43.5C39.8137 43.5 42.5 40.8137 42.5 37.5C42.5 34.1863 39.8137 31.5 36.5 31.5C33.1863 31.5 30.5 34.1863 30.5 37.5C30.5 40.8137 33.1863 43.5 36.5 43.5Z"
@@ -48,7 +66,7 @@ const Profile: React.FC = () => {
 
         <div className="separation">
           <label>자기 소개</label>
-          <textarea />
+          <textarea placeholder="40글자 이내로 작성해주세요." />
         </div>
 
         <button type="button">비밀번호 변경하기 &gt;</button>
