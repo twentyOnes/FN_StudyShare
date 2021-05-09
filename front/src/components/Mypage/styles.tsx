@@ -5,7 +5,7 @@ export const MyInfoBox = styled.div`
   display: grid;
   padding: 1.5em 0.5em 2.8em 0.5em;
   border-bottom: 1px solid #c5c5c5;
-  grid-template-columns: 1fr 4fr 2fr;
+  grid-template-columns: 1fr 10fr 1fr;
 `;
 
 export const ProfileWrap = styled.div``;
@@ -61,13 +61,14 @@ export const ProfileImg = styled.button`
 export const StudyListWrap = styled.section`
   padding: 1.5em;
   display: grid;
-  grid-template-columns: 1fr 0.1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   margin-bottom: 7vh;
+  place-items: center;
 `;
 
 //스터디 목록 카드
 export const Card = styled.div`
-  width: 100%;
+  width: 95%;
   height: 11em;
   border-radius: 10px;
   margin-bottom: 1.3em;

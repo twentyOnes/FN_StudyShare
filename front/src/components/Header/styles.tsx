@@ -4,7 +4,7 @@ import styled from "@emotion/styled";
 export const AlarmHeader = styled.header`
   position: sticky;
   top: 0;
-  width: 101%;
+  width: 103%;
   left: 0;
   margin-left: -1.3em;
   vertical-align: middle;

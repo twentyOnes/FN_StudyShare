@@ -34,7 +34,6 @@ const StudyList = ({ date, text, like }: Props) => {
           </p>
         </div>
       </Card>
-      <div></div>
       <Card>
         <div>
           <h4>{date}</h4>
@@ -79,7 +78,6 @@ const StudyList = ({ date, text, like }: Props) => {
           </p>
         </div>
       </Card>
-      <div></div>
       <Card>
         <div>
           <h4>{date}</h4>
@@ -124,7 +122,6 @@ const StudyList = ({ date, text, like }: Props) => {
           </p>
         </div>
       </Card>
-      <div></div>
       <Card>
         <div>
           <h4>{date}</h4>

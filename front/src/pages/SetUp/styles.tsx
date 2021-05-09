@@ -50,7 +50,7 @@ export const Click = styled("button")`
 export const Setting = styled.div`
   ul {
     position: absolute;
-    width: 100%;
+    width: 1024px;
     margin-left: -1.2em;
     li {
       border-bottom: 1px solid rgba(0, 0, 0, 0.2);
