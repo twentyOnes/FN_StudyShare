@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from "@emotion/styled";
 
 // 뒤로가기 버튼
 export const Back = styled.div`

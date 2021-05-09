@@ -8,7 +8,6 @@ export const MyInfoBox = styled.div`
   grid-template-columns: 1fr 10fr 1fr;
 `;
 
-export const ProfileWrap = styled.div``;
 export const MyInfoText = styled.div`
   .name {
     h1 {

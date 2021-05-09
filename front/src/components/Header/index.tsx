@@ -14,7 +14,7 @@ const Header: React.FC = () => {
         </Logo>
 
         <Buttons>
-          <Link to="/">
+          <Link to="/search">
             <button type="button">
               <img
                 src={process.env.PUBLIC_URL + "/images/btn_search.svg"}
