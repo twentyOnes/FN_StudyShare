@@ -45,6 +45,7 @@ export const Input = styled.div`
   button {
     color: #999999;
     line-height: 32px;
+    width: 50px;
   }
 `;
 
