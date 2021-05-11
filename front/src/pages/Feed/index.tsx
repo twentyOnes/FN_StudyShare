@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import Header from '../../components/Header';
 import Fnb from '../../components/Fnb';
 import FeedContent from '../../components/Feed/FeedContent';
+import FeedGoal from '../../components/Feed/FeedGoal';
 
 const FeedLayout = styled.section`
   margin-bottom: 10vh;
@@ -12,6 +13,7 @@ const Feed: React.FC = () => {
   return (
     <div>
       <Header />
+      <FeedGoal nickname="이둘리" />
       <FeedLayout>
         <FeedContent />
         <FeedContent />
