@@ -1,6 +1,6 @@
 import React from "react";
 
-const MailSend = () => {
+const MailSend: React.FC = () => {
   return <div></div>;
 };
 

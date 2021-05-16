@@ -1,6 +1,6 @@
 import React from "react";
 
-const PwChange = () => {
+const PwChange: React.FC  = () => {
   return <div></div>;
 };
 

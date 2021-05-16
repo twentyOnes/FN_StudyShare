@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.scss";
 
-const MoreModal = () => {
+const MoreModal: React.FC  = () => {
   return (
     <div className="modal">
       <div className="modal__box">

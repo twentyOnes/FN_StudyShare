@@ -1,6 +1,6 @@
 import React from "react";
 
-const FindPwId = () => {
+const FindPwId: React.FC = () => {
   return <div></div>;
 };
 

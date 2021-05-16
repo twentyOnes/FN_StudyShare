@@ -1,6 +1,6 @@
 import React from "react";
 
-const TodoList01 = () => {
+const TodoList01: React.FC  = () => {
   return <div></div>;
 };
 
