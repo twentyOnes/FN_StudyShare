@@ -18,7 +18,7 @@ const FeedDesc = ({ text }: Props) => {
         </span>
       </Text>
 
-      <CommentMore>
+      <CommentMore type="button">
         <span>댓글 10개</span>
       </CommentMore>
 

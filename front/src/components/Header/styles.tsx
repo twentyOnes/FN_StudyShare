@@ -1,22 +1,22 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 // 알림 페이지 헤더
 export const AlarmHeader = styled.header`
   position: sticky;
   top: 0;
-  width: 103%;
+  width: 108%;
   left: 0;
   margin-left: -1.3em;
   vertical-align: middle;
   background: #ffffff;
-  padding: 1em;
+  padding: 1em 0;
   z-index: 100;
   box-shadow: 0px 4px 10px rgb(0 0 0 / 4%);
   padding: 1em;
 `;
 
 export const AlarmWrap = styled.div`
-  max-width: 1024px;
+  max-width: 600px;
   margin: 0 auto;
   width: 100%;
 `;
@@ -35,7 +35,7 @@ export const HeaderLayout = styled.header`
 `;
 
 export const HeaderWrap = styled.div`
-  max-width: 1024px;
+  max-width: 600px;
   margin: 0 auto;
   width: 100%;
   display: flex;

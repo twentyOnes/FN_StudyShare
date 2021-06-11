@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const Footer = styled.footer`
   position: fixed;
@@ -12,7 +12,7 @@ export const Footer = styled.footer`
 `;
 
 export const FooterWrap = styled.div`
-  max-width: 1024px;
+  max-width: 600px;
   margin: 0 auto;
   width: 100%;
   display: flex;

@@ -1,13 +1,13 @@
-import styled from "@emotion/styled";
-import facepaint from "facepaint";
+import styled from '@emotion/styled';
+import facepaint from 'facepaint';
 
 //디바이스 미디어쿼리
 const mq = facepaint([
-  "@media(min-width: 320px)",
-  "@media(min-width: 375px)",
-  "@media(min-width: 414px)",
-  "@media(min-width: 720px)",
-  "@media(min-width: 1024px)",
+  '@media(min-width: 320px)',
+  '@media(min-width: 375px)',
+  '@media(min-width: 414px)',
+  '@media(min-width: 720px)',
+  '@media(min-width: 1024px)',
 ]);
 
 // 피드 헤더
@@ -116,6 +116,7 @@ export const LikeHead = styled.div`
   }
   svg {
     margin-right: 0.4375em;
+    vertical-align: middle;
   }
   p,
   span {
@@ -174,13 +175,7 @@ export const Comment = styled.div`
   display: grid;
   padding-top: 0.625em;
   ${mq({
-    gridTemplateColumns: [
-      "0.5fr 4fr",
-      "0.5fr 4fr",
-      "0.2fr 4fr",
-      "0.2fr 4fr",
-      "0.2fr 4fr",
-    ],
+    gridTemplateColumns: ['0.5fr 4fr', '0.5fr 4fr', '0.2fr 4fr', '0.2fr 4fr', '0.2fr 4fr'],
   })};
   .comment {
     .user {
@@ -233,7 +228,7 @@ export const Comment = styled.div`
         color: #c4c4c4;
         font-size: 0.8em;
         &:before {
-          content: "";
+          content: '';
           display: inline-block;
           margin: 4px 12px 3.5px 0;
           width: 48px;
@@ -254,13 +249,7 @@ export const Comment = styled.div`
 export const ReplayComent = styled.div`
   display: grid;
   ${mq({
-    gridTemplateColumns: [
-      "0.6fr 4fr",
-      "0.6fr 4fr",
-      "0.6fr 4fr",
-      "0.5fr 4fr",
-      "0.2fr 4fr",
-    ],
+    gridTemplateColumns: ['0.6fr 4fr', '0.6fr 4fr', '0.6fr 4fr', '0.5fr 4fr', '0.2fr 4fr'],
   })};
 `;
 
@@ -269,6 +258,7 @@ export const CommentInput = styled.div`
   display: flex;
   justify-content: space-between;
   padding-bottom: 1.5em;
+  align-items: center;
 `;
 
 export const InputWrap = styled.div`
@@ -298,7 +288,6 @@ export const Button = styled.button`
 
 //오늘의 달성도
 export const Card = styled.div`
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
   border-radius: 0.31em;
   background: #ffffff;
   padding: 1.5625em;
@@ -314,9 +303,9 @@ export const Hello = styled.p`
   .highlight {
     display: inline-block;
     position: relative;
-    z-index: 199;
+    z-index: 9;
     &:before {
-      content: "";
+      content: '';
       width: 100%;
       height: 12px;
       display: inline-block;
@@ -332,13 +321,13 @@ export const Hello = styled.p`
 export const Goal = styled.div`
   margin-top: 1em;
   .date {
-    font-size: 0.725em;
+    font-size: 0.8em;
     color: #999999;
   }
   h3 {
     margin-top: 0.2em;
     font-weight: 700;
-    font-size: 1em;
+    font-size: 1.1em;
     margin-bottom: 0;
   }
   .ant-progress-text {
@@ -357,7 +346,7 @@ export const WriteButton = styled.div`
     display: grid;
     justify-items: end;
     width: 100%;
-    max-width: 1024px;
+    max-width: 600px;
     margin: 0 auto;
     padding: 0 20px;
   }

@@ -23,7 +23,7 @@ const AppLayout = styled.main`
   margin: 0 auto;
   padding: 0 20px;
   width: 100%;
-  max-width: 1024px;
+  max-width: 600px;
   min-height: 100%;
   overflow-y: scroll;
   box-sizing: border-box;
