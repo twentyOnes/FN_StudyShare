@@ -298,6 +298,9 @@ export const Button = styled.button`
   color: #2656ff;
 `;
 
+export const FeedHeadWrap = styled.div`
+  padding: 0.6em 1.5625em;
+`;
 //오늘의 달성도
 export const Card = styled.div`
   border-radius: 0.31em;

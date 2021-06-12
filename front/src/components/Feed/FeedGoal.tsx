@@ -1,6 +1,6 @@
 import React from 'react';
 import { Progress } from 'antd';
-import { Card, Hello, Goal } from './styles';
+import { Card, Hello, Goal, FeedHeadWrap } from './styles';
 
 type Props = {
   nickname?: string;
@@ -10,7 +10,7 @@ type Props = {
 // eslint-disable-next-line
 const FeedHead = ({ nickname }: Props) => {
   return (
-    <div>
+    <FeedHeadWrap>
       <Card>
         <Hello>
           안녕하세요 {nickname}님,
@@ -25,7 +25,7 @@ const FeedHead = ({ nickname }: Props) => {
           <Progress percent={30} strokeColor="2656ff" />
         </Goal>
       </Card>
-    </div>
+    </FeedHeadWrap>
   );
 };
 
