@@ -1,13 +1,13 @@
-import styled from '@emotion/styled';
-import facepaint from 'facepaint';
+import styled from "@emotion/styled";
+import facepaint from "facepaint";
 
 //디바이스 미디어쿼리
 const mq = facepaint([
-  '@media(min-width: 320px)',
-  '@media(min-width: 375px)',
-  '@media(min-width: 414px)',
-  '@media(min-width: 720px)',
-  '@media(min-width: 1024px)',
+  "@media(min-width: 320px)",
+  "@media(min-width: 375px)",
+  "@media(min-width: 414px)",
+  "@media(min-width: 720px)",
+  "@media(min-width: 1024px)",
 ]);
 
 // 피드 헤더
@@ -51,7 +51,7 @@ export const MoreBtn = styled.button`
 
 // Feed 이미지
 export const Feed = styled.div`
-  padding: 0.6em 0 0;
+  padding: 0.6em 1.5625em; ;
 `;
 
 // Feed 슬라이드 이미지 사이즈
@@ -175,7 +175,13 @@ export const Comment = styled.div`
   display: grid;
   padding-top: 0.625em;
   ${mq({
-    gridTemplateColumns: ['0.5fr 4fr', '0.5fr 4fr', '0.2fr 4fr', '0.2fr 4fr', '0.2fr 4fr'],
+    gridTemplateColumns: [
+      "0.5fr 4fr",
+      "0.5fr 4fr",
+      "0.2fr 4fr",
+      "0.2fr 4fr",
+      "0.2fr 4fr",
+    ],
   })};
   .comment {
     .user {
@@ -228,7 +234,7 @@ export const Comment = styled.div`
         color: #c4c4c4;
         font-size: 0.8em;
         &:before {
-          content: '';
+          content: "";
           display: inline-block;
           margin: 4px 12px 3.5px 0;
           width: 48px;
@@ -249,7 +255,13 @@ export const Comment = styled.div`
 export const ReplayComent = styled.div`
   display: grid;
   ${mq({
-    gridTemplateColumns: ['0.6fr 4fr', '0.6fr 4fr', '0.6fr 4fr', '0.5fr 4fr', '0.2fr 4fr'],
+    gridTemplateColumns: [
+      "0.6fr 4fr",
+      "0.6fr 4fr",
+      "0.6fr 4fr",
+      "0.5fr 4fr",
+      "0.2fr 4fr",
+    ],
   })};
 `;
 
@@ -305,7 +317,7 @@ export const Hello = styled.p`
     position: relative;
     z-index: 9;
     &:before {
-      content: '';
+      content: "";
       width: 100%;
       height: 12px;
       display: inline-block;

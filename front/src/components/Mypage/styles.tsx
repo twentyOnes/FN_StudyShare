@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 //마이페이지 나의 정보 전체보기
 export const MyInfoBox = styled.div`
   display: grid;
-  padding: 1.5em 0.5em 2.8em 0.5em;
+  padding: 1.5em 1.5625em 2.8em 1.5625em;
   border-bottom: 1px solid #c5c5c5;
   grid-template-columns: 1fr 10fr 1fr;
 `;

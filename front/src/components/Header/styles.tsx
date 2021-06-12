@@ -6,7 +6,6 @@ export const AlarmHeader = styled.header`
   top: 0;
   width: 108%;
   left: 0;
-  margin-left: -1.3em;
   vertical-align: middle;
   background: #ffffff;
   padding: 1em 0;
@@ -25,7 +24,6 @@ export const AlarmWrap = styled.div`
 export const HeaderLayout = styled.header`
   position: sticky;
   width: 100%;
-  margin-left: -1.3em;
   top: 0;
   left: 0;
   vertical-align: middle;
