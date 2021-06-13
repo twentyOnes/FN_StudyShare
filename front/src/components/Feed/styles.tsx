@@ -329,7 +329,6 @@ export const Hello = styled.p`
       bottom: 0;
       left: 0;
       z-index: -1;
-      transition: 0.2s all;
     }
   }
 `;

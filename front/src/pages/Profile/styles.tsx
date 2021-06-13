@@ -8,6 +8,9 @@ export const Back = styled.div`
     vertical-align: middle;
   }
 `;
+export const ProfileWrapPadding = styled.div`
+  padding: 0.6em 1.5625em 10em;
+`;
 
 export const ProfileWrap = styled.div`
   justify-content: center;
