@@ -1,5 +1,5 @@
 import React from "react";
-import { TodoListBox, Title, Button } from "./styles";
+import { TodoListBox } from "./styles";
 
 type Props = {
   title: string;
@@ -7,11 +7,11 @@ type Props = {
 const TodoList: React.FC<Props> = ({ title }: Props) => {
   return (
     <TodoListBox>
-      <Title>{title}</Title>
-      <Button>
+      <h3>{title}</h3>
+      <button type="button">
         <svg
-          width="50"
-          height="50"
+          width="30"
+          height="30"
           viewBox="0 0 50 50"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -22,7 +22,7 @@ const TodoList: React.FC<Props> = ({ title }: Props) => {
             fill="white"
           />
         </svg>
-      </Button>
+      </button>
     </TodoListBox>
   );
 };

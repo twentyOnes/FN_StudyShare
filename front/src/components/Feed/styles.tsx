@@ -308,6 +308,7 @@ export const Card = styled.div`
   padding: 1.5625em;
   margin-bottom: 1.4625em;
   border: 1px solid #f2f2f2;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
 `;
 
 export const Hello = styled.p`
