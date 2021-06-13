@@ -1,15 +1,18 @@
 import React from "react";
 import SearchBar from "@src/components/Search/SearchBar";
 import SearchList from "@src/components/Search/SearchList";
-import More from "@src/components/Modal/More";
+import styled from "@emotion/styled";
+
+const SearchWrap = styled.main`
+  padding: 0.5625em 0.875em;
+`;
 
 const Search: React.FC = () => {
   return (
-    <div>
+    <SearchWrap>
       <SearchBar />
       <SearchList text="고3공부비법" />
-      <More />
-    </div>
+    </SearchWrap>
   );
 };
 

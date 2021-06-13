@@ -4,22 +4,21 @@ import styled from "@emotion/styled";
 export const Bar = styled.form`
   width: 100%;
   margin: 0.6em 0 1.1875em 0;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1em;
 `;
 
 export const Input = styled.div`
-  display: flex;
+  display: grid;
   height: 32px;
-  justify-content: space-around;
   overflow: hidden;
   box-sizing: border-box;
-  width: 97%;
   border: none;
   background: #e4e4e4;
   border-radius: 10px;
-  position: relative;
+  grid-template-columns: 2.5em auto 3em;
   img {
-    width: 1.3em;
+    width: 1.1em;
     height: 100%;
     margin-left: 0.7em;
   }
@@ -44,25 +43,24 @@ export const Input = styled.div`
   }
   button {
     color: #999999;
-    line-height: 32px;
-    width: 50px;
+    cursor: pointer;
   }
 `;
 
 export const Close = styled.button`
-  width: 3%;
+  margin-left: 0.475em;
 `;
 
 // 최근검색 리스트
 
 export const List = styled.ul`
   li {
-    padding: 9px 14px;
+    padding: 0.56em 0.825em;
     background: #f4f4f4;
     border-radius: 25px;
     display: inline-block;
     color: #999999;
-    font-size: 0.625em;
-    margin: 0.5em 0.625em;
+    font-size: 0.7em;
+    margin: 0.5em;
   }
 `;

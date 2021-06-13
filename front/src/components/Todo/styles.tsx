@@ -47,7 +47,7 @@ export const Back = styled.div`
     z-index: 9;
     &::before {
       content: "";
-      width: 58%;
+      width: 77%;
       height: 12px;
       display: inline-block;
       background: #ffc2ba;
