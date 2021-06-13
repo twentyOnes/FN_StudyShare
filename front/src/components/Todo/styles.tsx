@@ -22,22 +22,26 @@ export const TodoListBox = styled.div`
 
 // 뒤로가기 버튼
 export const Back = styled.div`
+  margin-bottom: 2.5em;
   margin-top: 1.325em;
   width: 100%;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 2em auto;
   justify-items: center;
   align-items: center;
   button {
     text-align: left;
     width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: grid;
   }
   img {
     width: 70%;
     vertical-align: middle;
   }
   strong {
-    width: 100%;
     text-align: left;
     color: #2656ff;
     font-size: 1.5625em;
@@ -45,9 +49,13 @@ export const Back = styled.div`
     font-weight: bolder;
     position: relative;
     z-index: 9;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
     &::before {
       content: "";
-      width: 77%;
+      width: 100%;
       height: 12px;
       display: inline-block;
       background: #ffc2ba;
@@ -83,7 +91,7 @@ export const Goal = styled.div`
 export const Item = styled.div`
   align-items: center;
   display: grid;
-  grid-template-columns: 3em 6em auto;
+  grid-template-columns: 3.5em 6em auto;
   margin-top: 0.8em;
   p {
     color: #000;
@@ -135,6 +143,6 @@ export const Comment = styled.div`
 export const CommentItem = styled.div`
   align-items: center;
   display: grid;
-  grid-template-columns: 3em auto;
+  grid-template-columns: 3.5em auto;
   margin-top: 0.8em;
 `;

@@ -4,7 +4,7 @@ import styled from "@emotion/styled";
 export const MyInfoBox = styled.div`
   display: grid;
   padding: 1.5em 1.5625em 2.8em 1.5625em;
-  border-bottom: 1px solid #c5c5c5;
+  border-bottom: 1px solid #dbdbdb;
   grid-template-columns: 1fr 10fr 1fr;
 `;
 
@@ -58,7 +58,7 @@ export const ProfileImg = styled.button`
 
 //스터디 목록 카드 Wrapper
 export const StudyListWrap = styled.section`
-  padding: 1.5em;
+  padding: 1.5em 0.5em 2em;
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 7vh;

@@ -25,7 +25,6 @@ const TodoHeader: React.FC<Props> = ({ name }: Props) => {
           />
         </svg>
       </button>
-
       <strong>{name}님의 day to do</strong>
     </Back>
   );

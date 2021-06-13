@@ -12,8 +12,8 @@ const MyInfo: React.FC = () => {
       <MyInfoBox>
         <ProfilePhoto />
         <ProfileInfo
-          name="이현주"
-          birth={19970521}
+          name="이둘리"
+          birth={20170502}
           study={10}
           follower={5}
           following={10}
