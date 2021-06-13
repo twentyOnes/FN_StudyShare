@@ -3,11 +3,13 @@ import { TodoListBox } from "./styles";
 
 type Props = {
   title: string;
+  children: JSX.Element;
 };
-const TodoList: React.FC<Props> = ({ title }: Props) => {
+const TodoList: React.FC<Props> = ({ title, children }: Props) => {
   return (
     <TodoListBox>
       <h3>{title}</h3>
+      {children}
       <button type="button">
         <svg
           width="30"

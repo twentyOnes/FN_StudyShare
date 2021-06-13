@@ -79,3 +79,62 @@ export const Goal = styled.div`
     font-size: 0.8em;
   }
 `;
+
+export const Item = styled.div`
+  align-items: center;
+  display: grid;
+  grid-template-columns: 3em 6em auto;
+  margin-top: 0.8em;
+  p {
+    color: #000;
+    font-size: 0.75em;
+    font-weight: 400;
+  }
+`;
+
+export const State = styled.div`
+  align-items: center;
+  display: grid;
+`;
+
+export const CommentState = styled.div`
+  align-items: start;
+  display: grid;
+  height: 100%;
+`;
+
+export const Subject = styled.div`
+  align-items: center;
+  display: grid;
+  span {
+    color: #999999;
+    font-size: 0.625em;
+    font-weight: 400;
+  }
+  h4 {
+    font-size: 0.825em;
+    color: #000;
+    font-weight: 700;
+  }
+`;
+
+export const Comment = styled.div`
+  padding-top: 0.6em;
+  h4 {
+    font-size: 0.825em;
+    color: #000;
+    font-weight: 700;
+  }
+  p {
+    color: #000;
+    font-size: 0.75em;
+    font-weight: 400;
+  }
+`;
+
+export const CommentItem = styled.div`
+  align-items: center;
+  display: grid;
+  grid-template-columns: 3em auto;
+  margin-top: 0.8em;
+`;
