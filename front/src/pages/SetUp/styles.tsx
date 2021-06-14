@@ -1,12 +1,7 @@
-import styled from "@emotion/styled";
-import facepaint from "facepaint";
+import styled from '@emotion/styled';
+import facepaint from 'facepaint';
 
-const mq = facepaint([
-  "@media(min-width: 320px)",
-  "@media(min-width: 375px)",
-  "@media(min-width: 414px)",
-  "@media(min-width: 720px)",
-]);
+const mq = facepaint(['@media(min-width: 320px)', '@media(min-width: 375px)', '@media(min-width: 414px)', '@media(min-width: 720px)']);
 
 export const Back = styled.div`
   margin-top: 1.325em;
@@ -33,7 +28,7 @@ export const Submit = styled.div`
   display: flex;
 `;
 
-export const Click = styled("button")`
+export const Click = styled('button')`
   background: #2656ff;
   border-radius: 1.875em;
   color: white;
@@ -41,8 +36,8 @@ export const Click = styled("button")`
   margin-top: 1.5em;
   font-size: 0.875em;
   ${mq({
-    textAlign: "center",
-    width: ["40%", "55%", "48%", "42%", "26%"],
+    textAlign: 'center',
+    width: ['40%', '55%', '48%', '42%', '26%'],
   })};
 `;
 
@@ -69,4 +64,8 @@ export const Setting = styled.div`
       }
     }
   }
+`;
+
+export const ComplaintWrap = styled.div`
+  padding: 0 1.5625em; ;
 `;
