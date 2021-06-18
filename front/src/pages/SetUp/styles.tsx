@@ -70,3 +70,7 @@ export const Setting = styled.div`
     }
   }
 `;
+
+export const ComplaintWrap = styled.div`
+  padding: 0 1.5625em; ;
+`;

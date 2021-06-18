@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 type Props = {
   preBtnNm: string;
@@ -16,12 +16,7 @@ const Button = ({ preBtnNm, nextBtnNm, preBtnClick, nextBtnClick }: Props) => {
         {preBtnNm}
       </button>
 
-      <button
-        name="next"
-        type="button"
-        className="right"
-        onClick={nextBtnClick}
-      >
+      <button name="next" type="button" className="right" onClick={nextBtnClick}>
         {nextBtnNm}
       </button>
     </div>

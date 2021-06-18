@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const PreNextBtn = styled.div`
   display: flex;
@@ -13,6 +13,9 @@ export const PreNextBtn = styled.div`
   button {
     width: 50%;
     border-radius: 1.875em;
+    a {
+      display: block;
+    }
   }
   .left {
     background: #c4c4c4 50%;
