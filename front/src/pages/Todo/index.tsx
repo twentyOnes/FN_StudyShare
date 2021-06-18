@@ -1,12 +1,13 @@
 import React from "react";
-import Header from "../../components/Header";
-import Fnb from "../../components/Fnb";
-import { TodoWrap } from "./styles";
+import Header from "@src/components/Header";
+import Fnb from "@src/components/Fnb";
 import TodoHeader from "@src/components/Todo/TodoHeader";
 import TodoGoal from "@src/components/Todo/TodoGoal";
 import TodoList from "@src/components/Todo/TodoList";
 import TodoComment from "@src/components/Todo/TodoComment";
 import TodoListItem from "@src/components/Todo/TodoListItem";
+
+import { TodoWrap } from "./styles";
 
 const Todo: React.FC = () => {
   return (

@@ -1,7 +1,9 @@
 import React from "react";
+import "antd/dist/antd.css";
+
 import styled from "@emotion/styled";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import "antd/dist/antd.css";
+
 import Start from "./pages/Login/start";
 import Feed from "./pages/Feed";
 import Write from "./pages/Feed/write";
@@ -37,18 +39,18 @@ const App: React.FC = () => {
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={Feed} />
-          <Route exact path="/write" component={Write} />
-          <Route exact path="/start" component={Start} />
-          <Route exact path="/alarm" component={Alarm} />
-          <Route exact path="/login" component={Login} />
-          <Route exact path="/mypage" component={MyPage} />
-          <Route exact path="/profile" component={Profile} />
-          <Route exact path="/setup" component={SetUp} />
-          <Route exact path="/complaint" component={Complaint} />
-          <Route exact path="/signup" component={SignUp} />
-          <Route exact path="/signup/complete" component={SignUpComplete} />
-          <Route exact path="/todo" component={Todo} />
-          <Route exact path="/search" component={Search} />
+          <Route path="/write" component={Write} />
+          <Route path="/start" component={Start} />
+          <Route path="/alarm" component={Alarm} />
+          <Route path="/login" component={Login} />
+          <Route path="/mypage" component={MyPage} />
+          <Route path="/profile" component={Profile} />
+          <Route path="/setup" component={SetUp} />
+          <Route path="/complaint" component={Complaint} />
+          <Route path="/signup" component={SignUp} />
+          <Route path="/signup/complete" component={SignUpComplete} />
+          <Route path="/todo" component={Todo} />
+          <Route path="/search" component={Search} />
         </Switch>
       </BrowserRouter>
     </AppLayout>

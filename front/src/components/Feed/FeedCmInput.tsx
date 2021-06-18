@@ -1,5 +1,5 @@
-import React from 'react';
-import { CommentInput, Profile, Input, Button, InputWrap } from './styles';
+import React from "react";
+import { CommentInput, Profile, Input, Button, InputWrap } from "./styles";
 
 // 피드 댓글창
 // eslint-disable-next-line
@@ -7,7 +7,7 @@ const FeedCmInput = () => {
   return (
     <CommentInput>
       <Profile>
-        <img src={process.env.PUBLIC_URL + '/images/rupy.png'} alt="프로도" />
+        <img src={process.env.PUBLIC_URL + "/images/rupy.png"} alt="프로도" />
       </Profile>
 
       <InputWrap>

@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import React from "react";
 import { PreNextBtn } from "./styles";
 
@@ -7,7 +6,7 @@ type Props = {
   nextBtnNm: string;
 };
 
-const TwoButton = ({ preBtnNm, nextBtnNm }: Props) => {
+const TwoButton: React.FC<Props> = ({ preBtnNm, nextBtnNm }: Props) => {
   return (
     <PreNextBtn>
       <button name="pre" type="button" className="left">

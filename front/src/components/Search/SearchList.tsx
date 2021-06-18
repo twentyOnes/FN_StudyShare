@@ -5,8 +5,7 @@ type Props = {
   text: string;
 };
 
-// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
-const SearchBar = ({ text }: Props) => {
+const SearchBar: React.FC<Props> = ({ text }: Props) => {
   return (
     <List>
       <li>#{text}</li>

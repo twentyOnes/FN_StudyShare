@@ -1,6 +1,6 @@
 import React from "react";
 
-const TodoDay = () => {
+const TodoDay: React.FC = () => {
   return <div></div>;
 };
 

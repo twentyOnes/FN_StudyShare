@@ -1,7 +1,9 @@
 import React from "react";
+
+import styled from "@emotion/styled";
+
 import SearchBar from "@src/components/Search/SearchBar";
 import SearchList from "@src/components/Search/SearchList";
-import styled from "@emotion/styled";
 
 const SearchWrap = styled.main`
   padding: 0.5625em 0.875em;

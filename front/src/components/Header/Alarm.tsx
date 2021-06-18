@@ -5,8 +5,7 @@ type Props = {
   title?: string;
 };
 
-// eslint-disable-next-line
-const alarm = ({ title }: Props) => {
+const alarm: React.FC<Props> = ({ title }: Props) => {
   return (
     <AlarmHeader>
       <AlarmWrap>

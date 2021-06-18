@@ -1,7 +1,9 @@
 import React from "react";
+
 import Header from "../../components/Header";
 import Fnb from "../../components/Fnb";
 import { Link } from "react-router-dom";
+
 import { Setting } from "./styles";
 
 // 환경설정 페이지

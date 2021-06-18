@@ -1,14 +1,13 @@
-import React from 'react';
-import { Progress } from 'antd';
-import { Card, Hello, Goal, FeedHeadWrap } from './styles';
+import React from "react";
+import { Progress } from "antd";
+import { Card, Hello, Goal, FeedHeadWrap } from "./styles";
 
 type Props = {
   nickname?: string;
 };
 
 //오늘의 달성도
-// eslint-disable-next-line
-const FeedHead = ({ nickname }: Props) => {
+const FeedHead: React.FC<Props> = ({ nickname }: Props) => {
   return (
     <FeedHeadWrap>
       <Card>

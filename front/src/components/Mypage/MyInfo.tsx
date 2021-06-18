@@ -1,5 +1,7 @@
 import React from "react";
+
 import { MyInfoBox, StudyListWrap } from "./styles";
+
 import ProfilePhoto from "./ProfilePhoto";
 import ProfileInfo from "./ProfileInfo";
 import FollowBtn from "./FollowBtn";

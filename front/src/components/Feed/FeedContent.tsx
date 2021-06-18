@@ -1,10 +1,12 @@
-import React from 'react';
-import FeedHead from './FeedHead';
-import FeedSlider from './FeedSlider';
-import FeedCmHead from './FeedCmHead';
-import FeedDesc from './FeedDesc';
-import { Feed } from './styles';
-import FeedCmInput from './FeedCmInput';
+import React from "react";
+
+import { Feed } from "./styles";
+
+import FeedHead from "./FeedHead";
+import FeedSlider from "./FeedSlider";
+import FeedCmHead from "./FeedCmHead";
+import FeedDesc from "./FeedDesc";
+import FeedCmInput from "./FeedCmInput";
 
 // 하나의 피드 게시글
 const FeedContent: React.FC = () => {

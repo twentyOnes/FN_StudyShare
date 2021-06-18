@@ -8,8 +8,7 @@ type Props = {
 };
 
 //스터디 목록 카드
-// eslint-disable-next-line
-const StudyList = ({ date, text, like }: Props) => {
+const StudyList: React.FC<Props> = ({ date, text, like }: Props) => {
   return (
     <>
       <Card>

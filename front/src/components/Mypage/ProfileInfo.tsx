@@ -11,8 +11,7 @@ type Props = {
 };
 
 //마이페이지 이름/팔로우,팔로잉수/자기소개
-// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
-const MyProfileInfo = ({
+const MyProfileInfo: React.FC<Props> = ({
   name,
   birth,
   study,
