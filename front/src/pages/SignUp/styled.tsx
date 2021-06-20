@@ -76,10 +76,20 @@ export const Input = styled.input`
   font-size: 0.9em;
 `;
 
+export const BirthBox = styled.div`
+  margin-bottom: 0.625em;
+  display: grid;
+  grid-template-columns: auto;
+  margin-top: 1em;
+`;
+
 export const PasswordBox = styled.div`
   margin-bottom: 0.625em;
   display: grid;
   grid-template-columns: auto;
+  &.blank {
+    margin-top: 1em;
+  }
 `;
 
 export const CheckBox = styled.div`
@@ -92,6 +102,7 @@ export const CheckBox = styled.div`
     cursor: pointer;
   }
 `;
+
 export const InputBox = styled.div`
   margin-bottom: 0.625em;
   display: grid;
@@ -103,7 +114,11 @@ export const InputBox = styled.div`
   input:nth-of-type(2) {
     justify-self: end;
   }
+  &.nickname {
+    margin-top: 1em;
+  }
 `;
+
 export const InputButton = styled.button`
   background: #2656ff;
   color: #fff;

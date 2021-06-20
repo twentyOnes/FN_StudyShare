@@ -9,6 +9,7 @@ import {
   InputBox,
   PasswordBox,
   CheckBox,
+  BirthBox,
 } from "./styled";
 
 const SignUp: React.FC = () => {
@@ -40,7 +41,7 @@ const SignUp: React.FC = () => {
             </InputButton>
           </InputBox>
 
-          <PasswordBox>
+          <PasswordBox className="blank">
             <Input
               placeholder="비밀번호 6글자 이상.(영문, 숫자, 특수문자중 2포함)"
               type="password"
@@ -52,23 +53,20 @@ const SignUp: React.FC = () => {
             <Input placeholder="비밀번호 확인." type="password" required />
           </PasswordBox>
 
-          <InputBox>
+          <InputBox className="nickname">
             <Input placeholder="닉네임을 입력해주세요." required />
             <InputButton>중복확인</InputButton>
           </InputBox>
 
-          <InputBox>
+          <BirthBox>
             <Input placeholder="생년월일을 입력해주세요." required />
-            <InputButton>중복확인</InputButton>
-          </InputBox>
+          </BirthBox>
         </InputWrap>
         <CheckBox>
           <p>이용 약관에 동의합니다</p>
           <Input type="checkbox" required />
         </CheckBox>
-        <SignButton type="submit">
-          <p>가입하기</p>
-        </SignButton>
+        <SignButton type="submit">확인</SignButton>
       </form>
     </SignUpWrap>
   );
