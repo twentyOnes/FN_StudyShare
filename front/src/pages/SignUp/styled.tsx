@@ -1,5 +1,19 @@
 import styled from "@emotion/styled";
 
+export const SignUpWrap = styled.div`
+  padding: 0.6em 2.125em;
+  height: 100%;
+  h1 {
+    font-weight: bold;
+    margin: 2em 0;
+    font-size: 1.125rem;
+  }
+  form {
+    position: relative;
+    height: 100%;
+  }
+`;
+
 // 회원가입 완료 페이지
 export const CompleteWrap = styled.div`
   display: flex;
@@ -54,9 +68,6 @@ export const InputWrap = styled.div`
   margin-bottom: 20px;
   box-sizing: border-box;
   display: grid;
-  div {
-    margin-bottom: 1em;
-  }
 `;
 export const Input = styled.input`
   border-radius: 4px;
@@ -64,12 +75,44 @@ export const Input = styled.input`
   padding: 13px;
   font-size: 0.9em;
 `;
+
+export const PasswordBox = styled.div`
+  margin-bottom: 0.625em;
+  display: grid;
+  grid-template-columns: auto;
+`;
+
+export const CheckBox = styled.div`
+  display: flex;
+  align-items: center;
+  input {
+    width: 18px;
+    height: 18px;
+    margin-left: 0.6em;
+    cursor: pointer;
+  }
+`;
+export const InputBox = styled.div`
+  margin-bottom: 0.625em;
+  display: grid;
+  grid-template-columns: auto 7em;
+  input:nth-of-type(1) {
+    justify-self: start;
+    width: 100%;
+  }
+  input:nth-of-type(2) {
+    justify-self: end;
+  }
+`;
 export const InputButton = styled.button`
   background: #2656ff;
   color: #fff;
   font-size: 0.9em;
   padding: 13px;
   border-radius: 4px;
+  z-index: 100;
+  height: 100%;
+  margin-left: -6px;
 `;
 export const SignButton = styled.button`
   background: #c4c4c4;
@@ -78,4 +121,6 @@ export const SignButton = styled.button`
   padding: 10px;
   border-radius: 4px;
   width: 100%;
+  position: absolute;
+  bottom: 5%;
 `;

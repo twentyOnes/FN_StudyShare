@@ -35,7 +35,7 @@ export const InputWrap = styled.form`
       textarea {
         margin-top: 1.4em;
         width: 100%;
-        border: 1px solid rgba(0, 0, 0, 0.5);
+        border: 1px solid rgba(0, 0, 0, 0.2);
         border-radius: 5px;
         resize: none;
         padding: 1em;
@@ -48,7 +48,7 @@ export const InputWrap = styled.form`
     width: 100%;
   }
   input {
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
     border-radius: 5px;
     height: 1.875em;

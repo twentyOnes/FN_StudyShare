@@ -1,9 +1,19 @@
 import React from "react";
-import { InputWrap, Input, InputButton, Header, SignButton } from "./styled";
+import {
+  InputWrap,
+  Input,
+  InputButton,
+  Header,
+  SignButton,
+  SignUpWrap,
+  InputBox,
+  PasswordBox,
+  CheckBox,
+} from "./styled";
 
 const SignUp: React.FC = () => {
   return (
-    <>
+    <SignUpWrap>
       <form>
         <Header>
           <button type="button" className="back">
@@ -20,33 +30,47 @@ const SignUp: React.FC = () => {
           </button>
         </Header>
 
-        <h1 style={{ margin: "1em 0", fontSize: "1em" }}>회원가입</h1>
+        <h1>회원가입</h1>
 
         <InputWrap>
-          <div>
+          <InputBox>
             <Input placeholder="아이디를 입력해주세요." required />
             <InputButton type="button" name="name">
               중복확인
             </InputButton>
-          </div>
+          </InputBox>
 
-          <Input
-            placeholder="비밀번호 6글자 이상.(영문, 숫자, 특수문자중 2포함)"
-            type="password"
-            required
-            style={{ marginBottom: "1em" }}
-          />
-          <Input placeholder="비밀번호 확인." type="password" required />
+          <PasswordBox>
+            <Input
+              placeholder="비밀번호 6글자 이상.(영문, 숫자, 특수문자중 2포함)"
+              type="password"
+              required
+            />
+          </PasswordBox>
 
-          <div style={{ margin: "1em 0" }}>
+          <PasswordBox>
+            <Input placeholder="비밀번호 확인." type="password" required />
+          </PasswordBox>
+
+          <InputBox>
             <Input placeholder="닉네임을 입력해주세요." required />
             <InputButton>중복확인</InputButton>
-          </div>
-        </InputWrap>
+          </InputBox>
 
-        <SignButton type="submit">가입하기</SignButton>
+          <InputBox>
+            <Input placeholder="생년월일을 입력해주세요." required />
+            <InputButton>중복확인</InputButton>
+          </InputBox>
+        </InputWrap>
+        <CheckBox>
+          <p>이용 약관에 동의합니다</p>
+          <Input type="checkbox" required />
+        </CheckBox>
+        <SignButton type="submit">
+          <p>가입하기</p>
+        </SignButton>
       </form>
-    </>
+    </SignUpWrap>
   );
 };
 
