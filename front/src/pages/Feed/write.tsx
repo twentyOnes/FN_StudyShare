@@ -61,6 +61,7 @@ const Write: React.FC = () => {
 
         <TextAdd>
           <h3>feed text</h3>
+          <textarea placeholder="내용을 입력해 주세요." />
         </TextAdd>
         <TwoButton
           preBtnNm="삭제하기"

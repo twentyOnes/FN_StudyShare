@@ -3,6 +3,9 @@ import styled from "@emotion/styled";
 export const WriteWrap = styled.div`
   padding: 0 1.5625em;
   height: 100%;
+  @media only screen and (max-width: 320px) {
+    margin-bottom: 5%;
+  }
 `;
 
 export const PhotoAddBtn = styled.div`
@@ -49,9 +52,15 @@ export const TextAdd = styled.div`
   width: 100%;
   border-top: 0.5px solid #000000;
   h3 {
-    margin: 1.375em 0;
+    margin: 1.375em 0 0;
     font-size: 1rem;
     font-weight: 700;
     color: #2656ff;
+  }
+  textarea {
+    width: 100%;
+    height: 6.25em;
+    border: none;
+    resize: none;
   }
 `;
