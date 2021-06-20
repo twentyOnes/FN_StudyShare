@@ -21,8 +21,9 @@ export const CompleteWrap = styled.div`
   text-align: center;
   align-items: center;
   justify-content: center;
+  padding: 0 2.4em;
   p {
-    font-size: 1.25em;
+    font-size: 0.9375rem;
     margin-bottom: 1.3em;
     font-weight: 300;
     line-height: 1.5;
@@ -31,16 +32,22 @@ export const CompleteWrap = styled.div`
       font-weight: 700;
     }
   }
+  .completeSuccess {
+    width: 100%;
+  }
 `;
+
 export const Button = styled.button`
   width: 100%;
-  padding: 1em;
   background: #2656ff;
-  border-radius: 8px;
+  border-radius: 4px;
   color: #fff;
-  font-size: 1em;
+  font-size: 0.8rem;
   font-weight: 700;
+  padding: 0.5em 0;
+  margin-top: 16px;
 `;
+
 // 회원가입 페이지
 export const Header = styled.header`
   margin-top: 2em;

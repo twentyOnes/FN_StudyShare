@@ -4,7 +4,7 @@ import { Button, CompleteWrap } from "./styled";
 const SignUpComplete: React.FC = () => {
   return (
     <CompleteWrap>
-      <div>
+      <div className="completeSuccess">
         <p>
           회원가입이 완료되었습니다. <br />
           <b>Study Share</b>와 함께

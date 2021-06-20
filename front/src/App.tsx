@@ -48,7 +48,7 @@ const App: React.FC = () => {
           <Route path="/setup" component={SetUp} />
           <Route path="/complaint" component={Complaint} />
           <Route path="/signup" component={SignUp} />
-          <Route path="/signup/complete" component={SignUpComplete} />
+          <Route path="/complete" component={SignUpComplete} />
           <Route path="/todo" component={Todo} />
           <Route path="/search" component={Search} />
         </Switch>
