@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from "@emotion/styled";
 
 export const PreNextBtn = styled.div`
   display: flex;
@@ -18,7 +18,7 @@ export const PreNextBtn = styled.div`
     }
   }
   .left {
-    background: #c4c4c4 50%;
+    background: #e4e4e4;
     margin-right: 0.5625em;
   }
   .right {
