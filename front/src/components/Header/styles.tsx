@@ -53,6 +53,7 @@ export const Title = styled.h1`
   font-weight: 700;
   margin-left: 0.7em;
   display: inline-block;
+  margin-bottom:0;
 `;
 
 export const Logo = styled.h1`
