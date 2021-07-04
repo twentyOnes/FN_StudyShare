@@ -16,7 +16,7 @@ const Feed: React.FC = () => {
   return (
     <div>
       <Header />
-      <FeedGoal nickname="이둘리" />
+      <FeedGoal nickname="이현주" />
       <FeedLayout>
         <FeedContent />
         <FeedContent />
