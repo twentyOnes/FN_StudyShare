@@ -8,7 +8,7 @@ const mq = facepaint([
   "@media(min-width: 720px)",
 ]);
 
-export const Back = styled.div`
+export const Back = styled.button`
   margin-top: 1.325em;
   img {
     width: 70%;

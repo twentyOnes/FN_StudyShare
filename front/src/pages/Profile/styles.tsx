@@ -1,13 +1,14 @@
 import styled from "@emotion/styled";
 
 // 뒤로가기 버튼
-export const Back = styled.div`
+export const Back = styled.button`
   margin-top: 1.325em;
   img {
     width: 70%;
     vertical-align: middle;
   }
 `;
+
 export const ProfileWrapPadding = styled.div`
   padding: 0.6em 1.5625em 10em;
 `;

@@ -14,7 +14,7 @@ const Todo: React.FC = () => {
     <div>
       <Header />
       <TodoWrap>
-        <TodoHeader name="둘리" />
+        <TodoHeader name="현주" />
         <TodoGoal />
 
         <TodoList title="To do list">

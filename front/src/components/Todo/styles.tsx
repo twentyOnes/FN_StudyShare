@@ -21,12 +21,11 @@ export const TodoListBox = styled.div`
 `;
 
 // 뒤로가기 버튼
-export const Back = styled.div`
+export const TodoHeaderTit = styled.div`
   margin-bottom: 2.5em;
   margin-top: 1.325em;
   width: 100%;
   display: grid;
-  grid-template-columns: 2em auto;
   justify-items: center;
   align-items: center;
   button {

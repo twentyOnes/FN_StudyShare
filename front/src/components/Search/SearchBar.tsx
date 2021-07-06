@@ -1,7 +1,10 @@
 import React from "react";
 import { Bar, Input, Close } from "./styles";
+import { useHistory } from "react-router-dom";
 
 const SearchBar: React.FC = () => {
+  const history = useHistory();
+
   return (
     <Bar className="search">
       <Input>
@@ -13,7 +16,7 @@ const SearchBar: React.FC = () => {
         <button type="reset">취소</button>
       </Input>
 
-      <Close type="button">
+      <Close type="button" onClick={() => history.goBack()}>
         <svg
           width="14"
           height="14"

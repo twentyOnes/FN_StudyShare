@@ -11,6 +11,7 @@ export const Modal = styled.header`
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.3);
+  z-index: 100;
   .modal {
     &__wrap {
       max-width: 600px;
@@ -40,7 +41,9 @@ export const Modal = styled.header`
       }
       h3 {
         font-size: 1.1em;
-        font-weight: 700;
+        font-weight: 800;
+        margin-bottom: 0;
+        margin-left: 1em;
       }
     }
     &__btn {

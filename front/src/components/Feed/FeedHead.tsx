@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState, useCallback } from "react";
+
 import { Head, Profile, Nickname, MoreBtn } from "./styles";
+import More from "../Modal/More";
 
 type Props = {
   nickname?: string;
@@ -7,6 +9,12 @@ type Props = {
 
 //피드 글 작성자
 const FeedHead: React.FC<Props> = ({ nickname }: Props) => {
+  const [isShowing, setIsShowing] = useState(false);
+
+  const openModal = useCallback(() => {
+    setIsShowing(true);
+  }, []);
+
   return (
     <div>
       <Head>
@@ -20,12 +28,14 @@ const FeedHead: React.FC<Props> = ({ nickname }: Props) => {
           <Nickname>@{nickname}</Nickname>
         </div>
 
-        <MoreBtn>
+        <MoreBtn type="button" onClick={openModal}>
           <img
             src={process.env.PUBLIC_URL + "/images/btn_more.svg"}
             alt="더보기"
           />
         </MoreBtn>
+
+        {isShowing && <More />}
       </Head>
     </div>
   );
