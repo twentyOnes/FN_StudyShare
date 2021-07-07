@@ -15,6 +15,10 @@ const FeedHead: React.FC<Props> = ({ nickname }: Props) => {
     setIsShowing(true);
   }, []);
 
+  const closeModal = useCallback(() => {
+    setIsShowing(false);
+  }, []);
+
   return (
     <div>
       <Head>
@@ -35,7 +39,7 @@ const FeedHead: React.FC<Props> = ({ nickname }: Props) => {
           />
         </MoreBtn>
 
-        {isShowing && <More />}
+        {isShowing && <More onClose={closeModal} />}
       </Head>
     </div>
   );
