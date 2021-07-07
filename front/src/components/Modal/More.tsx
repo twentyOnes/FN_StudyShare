@@ -1,8 +1,10 @@
 import React from "react";
 import { Modal } from "./styles";
 
+// eslint-disable-next-line
 type Props = { onClose?: any };
 
+// eslint-disable-next-line
 const MoreModal = ({ onClose }: Props) => {
   return (
     <>
