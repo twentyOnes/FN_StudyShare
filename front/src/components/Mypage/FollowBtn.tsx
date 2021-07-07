@@ -14,7 +14,7 @@ const FollowButton = styled.button`
 const FollowBtn: React.FC = () => {
   const [follow, setFollow] = useState(false);
 
-  const onToggleLike = useCallback(() => {
+  const onToggleFollow = useCallback(() => {
     setFollow((prev) => !prev);
   }, []);
 
@@ -25,7 +25,7 @@ const FollowBtn: React.FC = () => {
           <img
             src={process.env.PUBLIC_URL + "/images/follow.svg"}
             alt="팔로우버튼"
-            onClick={onToggleLike}
+            onClick={onToggleFollow}
           />
         </FollowButton>
       ) : (
@@ -33,7 +33,7 @@ const FollowBtn: React.FC = () => {
           <img
             src={process.env.PUBLIC_URL + "/images/following.svg"}
             alt="팔로잉버튼"
-            onClick={onToggleLike}
+            onClick={onToggleFollow}
           />
         </FollowButton>
       )}
