@@ -2,10 +2,7 @@ import styled from "@emotion/styled";
 
 export const WriteWrap = styled.div`
   padding: 0 1.5625em;
-  height: 100%;
-  @media only screen and (max-width: 320px) {
-    margin-bottom: 5%;
-  }
+  margin-bottom: 6em;
 `;
 
 export const PhotoAddBtn = styled.div`
