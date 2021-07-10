@@ -31,7 +31,7 @@ const PreNextButton = styled.div`
   button {
     border-radius: 30px;
     color: #fff;
-    width: 35%;
+    width: 38%;
     text-align: center;
     padding: 4px 0;
   }

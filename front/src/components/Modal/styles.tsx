@@ -28,6 +28,9 @@ export const Modal = styled.header`
       &.input {
         padding-bottom: 18px;
       }
+      &.todoIcon {
+        padding-bottom: 18px;
+      }
     }
     &__more {
       width: 100%;
@@ -67,8 +70,8 @@ export const TodoInput = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 18px 0;
-  input {
+  input,
+  textarea {
     width: 80%;
   }
   .todo__title {
@@ -77,6 +80,7 @@ export const TodoInput = styled.div`
     border-radius: 10px;
     margin-bottom: 1em;
     padding: 5px 14px;
+    margin-top: 0.8125em;
   }
   .todo__text {
     border: 0.5px solid #e1e1e1;
@@ -84,5 +88,29 @@ export const TodoInput = styled.div`
     border-radius: 10px;
     padding: 5px 14px;
     height: 20vh;
+    resize: none;
   }
+  .time {
+    text-align: left;
+    width: 80%;
+    font-weight: 800;
+    color: #999999;
+    margin-left: 3em;
+    font-size: 1em;
+  }
+`;
+
+export const TodoState = styled.div`
+  display: grid;
+  .date {
+    text-align: center;
+    font-weight: 800;
+    font-size: 1em;
+  }
+`;
+
+export const TodoWrap = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 1.1875em 0;
 `;

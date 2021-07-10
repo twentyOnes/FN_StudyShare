@@ -10,7 +10,7 @@ const TodoList01: React.FC = () => {
           <div className="modal__box input">
             <TodoInput>
               <input type="text" className="todo__title" />
-              <input type="text" className="todo__text" />
+              <textarea className="todo__text" />
             </TodoInput>
 
             <Button preBtnNm="삭제하기" nextBtnNm="저장하기" />
