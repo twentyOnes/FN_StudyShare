@@ -6,6 +6,7 @@ import TodoGoal from "@src/components/Todo/TodoGoal";
 import TodoList from "@src/components/Todo/TodoList";
 import TodoComment from "@src/components/Todo/TodoComment";
 import TodoListItem from "@src/components/Todo/TodoListItem";
+import TodoList01 from "@src/components/Modal/TodoList01";
 
 import { TodoWrap } from "./styles";
 
@@ -25,6 +26,7 @@ const Todo: React.FC = () => {
           <TodoComment />
         </TodoList>
 
+        <TodoList01 />
         <Fnb />
       </TodoWrap>
     </div>

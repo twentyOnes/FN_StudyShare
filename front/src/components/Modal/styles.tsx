@@ -1,6 +1,5 @@
 import styled from "@emotion/styled";
 
-// 알림 페이지 헤더
 export const Modal = styled.header`
   width: 100%;
   height: 100vh;
@@ -26,6 +25,9 @@ export const Modal = styled.header`
       width: 77%;
       background: #ffffff;
       border-radius: 0.625em;
+      &.input {
+        padding-bottom: 18px;
+      }
     }
     &__more {
       width: 100%;
@@ -57,5 +59,30 @@ export const Modal = styled.header`
         }
       }
     }
+  }
+`;
+
+export const TodoInput = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 18px 0;
+  input {
+    width: 80%;
+  }
+  .todo__title {
+    border: 0.5px solid #e1e1e1;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    padding: 5px 14px;
+  }
+  .todo__text {
+    border: 0.5px solid #e1e1e1;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 5px 14px;
+    height: 20vh;
   }
 `;
