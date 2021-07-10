@@ -6,6 +6,7 @@ import TodoGoal from "@src/components/Todo/TodoGoal";
 import TodoList from "@src/components/Todo/TodoList";
 import TodoComment from "@src/components/Todo/TodoComment";
 import TodoListItem from "@src/components/Todo/TodoListItem";
+import TodoComent from "@src/components/Modal/TodoComent";
 
 import { TodoWrap } from "./styles";
 

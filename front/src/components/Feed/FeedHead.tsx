@@ -11,12 +11,8 @@ type Props = {
 const FeedHead: React.FC<Props> = ({ nickname }: Props) => {
   const [isShowing, setIsShowing] = useState(false);
 
-  const openModal = useCallback(() => {
-    setIsShowing(true);
-  }, []);
-
-  const closeModal = useCallback(() => {
-    setIsShowing(false);
+  const toggleModal = useCallback(() => {
+    setIsShowing((prevState) => !prevState);
   }, []);
 
   return (
@@ -32,14 +28,14 @@ const FeedHead: React.FC<Props> = ({ nickname }: Props) => {
           <Nickname>@{nickname}</Nickname>
         </div>
 
-        <MoreBtn type="button" onClick={openModal}>
+        <MoreBtn type="button" onClick={toggleModal}>
           <img
             src={process.env.PUBLIC_URL + "/images/btn_more.svg"}
             alt="더보기"
           />
         </MoreBtn>
 
-        {isShowing && <More onClose={closeModal} />}
+        {isShowing && <More onClose={toggleModal} />}
       </Head>
     </div>
   );

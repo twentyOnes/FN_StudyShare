@@ -102,10 +102,17 @@ export const TodoInput = styled.div`
 
 export const TodoState = styled.div`
   display: grid;
+  justify-content: center;
   .date {
     text-align: center;
     font-weight: 800;
     font-size: 1em;
+  }
+  button {
+    background: rgba(196, 196, 196, 0.5);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
   }
 `;
 
