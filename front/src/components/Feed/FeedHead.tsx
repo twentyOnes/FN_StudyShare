@@ -8,7 +8,7 @@ type Props = {
 };
 
 //피드 글 작성자
-const FeedHead: React.FC<Props> = ({ nickname }: Props) => {
+const FeedHead: React.FC<Props> = ({ nickname }) => {
   const [isShowing, setIsShowing] = useState(false);
 
   const toggleModal = useCallback(() => {

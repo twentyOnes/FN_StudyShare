@@ -18,7 +18,7 @@ const MyProfileInfo: React.FC<Props> = ({
   follower,
   following,
   introduction,
-}: Props) => {
+}) => {
   return (
     <MyInfoText>
       <div className="name">

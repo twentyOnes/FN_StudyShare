@@ -4,8 +4,7 @@ import { Modal } from "./styles";
 // eslint-disable-next-line
 type Props = { onClose?: any };
 
-// eslint-disable-next-line
-const MoreModal = ({ onClose }: Props) => {
+const MoreModal: React.FC<Props> = ({ onClose }) => {
   return (
     <Modal className="modal">
       <div className="modal__wrap">

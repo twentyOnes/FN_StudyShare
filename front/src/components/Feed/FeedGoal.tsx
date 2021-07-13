@@ -7,7 +7,7 @@ type Props = {
 };
 
 //오늘의 달성도
-const FeedHead: React.FC<Props> = ({ nickname }: Props) => {
+const FeedHead: React.FC<Props> = ({ nickname }) => {
   return (
     <FeedHeadWrap>
       <Card>

@@ -17,7 +17,7 @@ const FeedComment: React.FC<Props> = ({
   like,
   comment,
   className = "replayComment",
-}: Props) => {
+}) => {
   const [isLike, setIsLike] = useState(false);
 
   const onToggleLike = useCallback(() => {

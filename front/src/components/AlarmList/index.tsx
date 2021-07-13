@@ -1,5 +1,5 @@
-import React from 'react';
-import { AlarmBox, Alarm, Profile, Icon } from './styles';
+import React from "react";
+import { AlarmBox, Alarm, Profile, Icon } from "./styles";
 
 type Props = {
   date: number;
@@ -8,15 +8,17 @@ type Props = {
 };
 
 const date: Date = new Date();
-console.log('Date = ' + date);
+console.log("Date = " + date);
 
-// eslint-disable-next-line
-const AlarmList = ({ date, nickname, text }: Props) => {
+const AlarmList: React.FC<Props> = ({ date, nickname, text }) => {
   return (
     <AlarmBox>
       <Alarm className="like">
         <Icon>
-          <img src={process.env.PUBLIC_URL + '/images/alarm_colorLike.svg'} alt="좋아요" />
+          <img
+            src={process.env.PUBLIC_URL + "/images/alarm_colorLike.svg"}
+            alt="좋아요"
+          />
         </Icon>
         <section>
           <h4>{nickname}님이 내 게시물을 좋아합니다.</h4>
@@ -26,7 +28,10 @@ const AlarmList = ({ date, nickname, text }: Props) => {
 
       <Alarm className="follow">
         <Profile>
-          <img src={process.env.PUBLIC_URL + '/images/peach.jpg'} alt="팔로우" />
+          <img
+            src={process.env.PUBLIC_URL + "/images/peach.jpg"}
+            alt="팔로우"
+          />
         </Profile>
         <section>
           <h4>{nickname}님이 나를 팔로우 합니다.</h4>
@@ -36,7 +41,10 @@ const AlarmList = ({ date, nickname, text }: Props) => {
 
       <Alarm className="comment">
         <Icon>
-          <img src={process.env.PUBLIC_URL + '/images/alarm_comment.svg'} alt="댓글" />
+          <img
+            src={process.env.PUBLIC_URL + "/images/alarm_comment.svg"}
+            alt="댓글"
+          />
         </Icon>
         <section>
           <h4>{nickname}님이 내 게시물에 단 댓글</h4>
@@ -47,7 +55,10 @@ const AlarmList = ({ date, nickname, text }: Props) => {
 
       <Alarm className="replayComment">
         <Icon>
-          <img src={process.env.PUBLIC_URL + '/images/alarm_comment.svg'} alt="댓글" />
+          <img
+            src={process.env.PUBLIC_URL + "/images/alarm_comment.svg"}
+            alt="댓글"
+          />
         </Icon>
         <section>
           <h4>{nickname}님이 내 댓글에 단 답글</h4>

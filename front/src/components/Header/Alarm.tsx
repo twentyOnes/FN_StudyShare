@@ -6,7 +6,7 @@ type Props = {
   title?: string;
 };
 
-const alarm: React.FC<Props> = ({ title }: Props) => {
+const alarm: React.FC<Props> = ({ title }) => {
   const history = useHistory();
 
   return (

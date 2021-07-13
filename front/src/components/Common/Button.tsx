@@ -7,7 +7,7 @@ type Props = {
 };
 
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
-const Button = ({ preBtnNm, nextBtnNm }: Props) => {
+const Button: React.FC<Props> = ({ preBtnNm, nextBtnNm }) => {
   return (
     <PreNextButton className="PreNextBtn">
       <button name="pre" type="button" className="left">

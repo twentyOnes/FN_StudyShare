@@ -5,7 +5,7 @@ type Props = {
   name: string;
 };
 
-const TodoHeader: React.FC<Props> = ({ name }: Props) => {
+const TodoHeader: React.FC<Props> = ({ name }) => {
   return (
     <TodoHeaderTit>
       <strong>{name}님의 day to do</strong>

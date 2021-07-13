@@ -1,20 +1,28 @@
 import styled from "@emotion/styled";
 
-export const LoginForm = styled.section`
+export const LoginForm = styled.form`
   display: grid;
   text-align: center;
   place-items: center;
   min-height: 100vh;
   position: relative;
+  padding: 0.6em 1.5625em;
 `;
 export const Button = styled.button`
   width: 100%;
-  padding: 1em;
   background: #2656ff;
   border-radius: 8px;
   color: #fff;
   margin-top: 1.5em;
   font-size: 0.87em;
+  a {
+    width: 100%;
+    display: block;
+    padding: 1em;
+    &:hover {
+      color: #fff;
+    }
+  }
 `;
 export const Input = styled.input`
   border: 1px solid #2656ff;
@@ -55,7 +63,7 @@ export const CloseButton = styled.button`
   width: 25px;
   height: 25px;
   position: absolute;
-  right: -3px;
+  right: 20px;
   top: 35px;
   img {
     width: 60%;

@@ -5,7 +5,7 @@ type Props = {
   title: string;
   children: JSX.Element;
 };
-const TodoList: React.FC<Props> = ({ title, children }: Props) => {
+const TodoList: React.FC<Props> = ({ title, children }) => {
   return (
     <TodoListBox>
       <h3>{title}</h3>

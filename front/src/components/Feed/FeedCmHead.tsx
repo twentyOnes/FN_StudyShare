@@ -9,7 +9,7 @@ type Props = {
 };
 
 // 피드 게시글 좋아요 + 댓글 + 답글
-const FeedCmHead: React.FC<Props> = ({ like, time }: Props) => {
+const FeedCmHead: React.FC<Props> = ({ like, time }) => {
   const [isLike, setIsLike] = useState(false);
 
   const onToggleLike = useCallback(() => {

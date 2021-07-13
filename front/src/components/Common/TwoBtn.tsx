@@ -14,7 +14,7 @@ const TwoButton: React.FC<Props> = ({
   nextBtnNm,
   link01,
   link02,
-}: Props) => {
+}) => {
   return (
     <PreNextBtn>
       <button name="pre" type="button" className="left">

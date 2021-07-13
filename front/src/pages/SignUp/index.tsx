@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   InputWrap,
   Input,
@@ -17,18 +18,18 @@ const SignUp: React.FC = () => {
     <SignUpWrap>
       <form>
         <Header>
-          <button type="button" className="back">
+          <Link to="login" className="back">
             <img
               src={process.env.PUBLIC_URL + "/images/icon_back.svg"}
               alt="뒤로가기"
             />
-          </button>
-          <button type="button" className="close">
+          </Link>
+          <Link to="/" className="close">
             <img
               src={process.env.PUBLIC_URL + "/images/btn_close.svg"}
               alt="닫기"
             />
-          </button>
+          </Link>
         </Header>
 
         <h1>회원가입</h1>

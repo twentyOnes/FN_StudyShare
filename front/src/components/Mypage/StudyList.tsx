@@ -8,7 +8,7 @@ type Props = {
 };
 
 //스터디 목록 카드
-const StudyList: React.FC<Props> = ({ date, text, like }: Props) => {
+const StudyList: React.FC<Props> = ({ date, text, like }) => {
   return (
     <>
       <Card>

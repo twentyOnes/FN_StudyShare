@@ -5,7 +5,7 @@ type Props = {
   text: string;
 };
 
-const SearchBar: React.FC<Props> = ({ text }: Props) => {
+const SearchBar: React.FC<Props> = ({ text }) => {
   return (
     <List>
       <li>#{text}</li>

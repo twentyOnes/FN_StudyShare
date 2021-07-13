@@ -8,7 +8,7 @@ type Props = {
 };
 
 //피드 게시글 내용 (텍스트)
-const FeedDesc: React.FC<Props> = ({ text }: Props) => {
+const FeedDesc: React.FC<Props> = ({ text }) => {
   return (
     <>
       <Text>
