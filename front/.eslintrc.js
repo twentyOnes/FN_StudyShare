@@ -19,8 +19,8 @@ module.exports = {
   },
   plugins: ["react", "@typescript-eslint", "prettier"],
   rules: {
-    "@typescript-eslint/explicit-function-return-type": "off",
     "react/prop-types": "off",
     "@typescript-eslint/no-var-requires": 0,
+    "@typescript-eslint/explicit-function-return-type": "off",
   },
 };

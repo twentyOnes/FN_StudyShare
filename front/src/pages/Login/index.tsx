@@ -9,9 +9,14 @@ import {
   CloseButton,
 } from "./styled";
 
-const Login: React.FC = () => {
+import { useSelector, useDispatch } from "react-redux";
+import { loginRequestAction } from "../../reducers/user";
+
+function Login(props: { onClick: () => void }) {
+  const dispatch = useDispatch();
   const [id, setId] = useState("");
   const [password, setPassword] = useState("");
+  const { logInLoading } = useSelector((state: any) => state.user);
 
   const onChangeId = useCallback((e) => {
     setId(e.target.value);
@@ -26,6 +31,7 @@ const Login: React.FC = () => {
       window.location.href = "/home";
       e.preventDefault;
       console.log(id, password);
+      dispatch(loginRequestAction({ id, password }));
     },
     [id, password]
   );
@@ -77,6 +83,6 @@ const Login: React.FC = () => {
       </CloseButton>
     </LoginForm>
   );
-};
+}
 
 export default Login;

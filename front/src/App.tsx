@@ -38,7 +38,7 @@ const App: React.FC = () => {
     <AppLayout>
       <BrowserRouter>
         <Switch>
-          <Route exact path="/" component={Feed} />
+          <Route exact path="/home" component={Feed} />
           <Route path="/write" component={Write} />
           <Route path="/start" component={Start} />
           <Route path="/alarm" component={Alarm} />

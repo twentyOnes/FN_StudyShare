@@ -1,6 +1,6 @@
-import React from 'react';
-import Slider from 'react-slick';
-import { FeedImg } from './styles';
+import React from "react";
+import Slider from "react-slick";
+import { FeedImg } from "./styles";
 
 //피드 슬라이드 이미지
 const FeedSlider: React.FC = () => {
@@ -17,13 +17,13 @@ const FeedSlider: React.FC = () => {
     <FeedImg>
       <Slider {...settings}>
         <div>
-          <img src={process.env.PUBLIC_URL + '/images/slider01.jpg'} alt="" />
+          <img src={process.env.PUBLIC_URL + "/images/slider01.jpg"} alt="" />
         </div>
         <div>
-          <img src={process.env.PUBLIC_URL + '/images/slider01.jpg'} alt="" />
+          <img src={process.env.PUBLIC_URL + "/images/slider01.jpg"} alt="" />
         </div>
         <div>
-          <img src={process.env.PUBLIC_URL + '/images/slider01.jpg'} alt="" />
+          <img src={process.env.PUBLIC_URL + "/images/slider01.jpg"} alt="" />
         </div>
       </Slider>
     </FeedImg>
