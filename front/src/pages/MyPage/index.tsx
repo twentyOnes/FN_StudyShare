@@ -1,15 +1,12 @@
-import React from "react";
-import Header from "../../components/Header";
-import Fnb from "../../components/Fnb";
-import MyInfo from "../../components/Mypage/MyInfo";
+import Header from "components/Common/Header";
+import FooterNav from "components/Common/FooterNav";
 
-const MyPage: React.FC = () => {
+const MyPage = () => {
   return (
-    <div>
+    <>
       <Header />
-      <MyInfo />
-      <Fnb />
-    </div>
+      <FooterNav />
+    </>
   );
 };
 

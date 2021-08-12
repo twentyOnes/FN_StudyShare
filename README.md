@@ -10,8 +10,9 @@
 
 - emotion (css-in-js)
 - typescript
-- react
+- react (next)
 - Redux
 - Redux-saga
 - HTML Sementic MarkUp
 - 반응형 view port 단위 사용
+-

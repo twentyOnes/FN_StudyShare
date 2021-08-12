@@ -1,37 +1,31 @@
-import React from "react";
+import Header from "components/Common/Header";
+import FooterNav from "components/Common/FooterNav";
+import Link from "next/link";
+import { Setting } from "./style";
 
-import Header from "../../components/Header";
-import Fnb from "../../components/Fnb";
-import { Link } from "react-router-dom";
-
-import { Setting } from "./styles";
-
-// 환경설정 페이지
-const SetUp: React.FC = () => {
+const Setup = () => {
   return (
-    <Setting>
+    <>
       <Header />
-
-      <ul>
+      <ul css={Setting}>
         <li>
-          <Link to="/profile">
-            프로필 수정하기<span>&gt;</span>
+          <Link href="/profile">
+            <a>
+              프로필 수정하기<span>&gt;</span>
+            </a>
           </Link>
         </li>
         <li>
-          <Link to="/complaint">
-            불편신고<span>&gt;</span>
-          </Link>
-        </li>
-        <li>
-          <Link to="/">
-            로그아웃<span>&gt;</span>
+          <Link href="/">
+            <a>
+              로그아웃<span>&gt;</span>
+            </a>
           </Link>
         </li>
       </ul>
-      <Fnb />
-    </Setting>
+      <FooterNav />
+    </>
   );
 };
 
-export default SetUp;
+export default Setup;
