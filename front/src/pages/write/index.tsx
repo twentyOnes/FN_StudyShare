@@ -1,6 +1,6 @@
 import Header from "components/Common/Header";
 import FooterNav from "components/Common/FooterNav";
-import { WriteWrap, PhotoAddBtn, PhotoAdd, TextAdd } from "./style";
+import { WriteWrap, TextAdd } from "./style";
 import SliderImg from "components/Feed/SliderImg";
 
 const Write = () => {
