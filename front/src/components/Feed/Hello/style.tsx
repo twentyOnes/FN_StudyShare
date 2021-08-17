@@ -50,12 +50,12 @@ export const Goal = css`
 `;
 
 export const Signup = css`
-  button {
+  margin-top: 2em;
+  a {
     color: #fff;
     border-radius: 15px;
     font-size: 1.5rem;
     padding: 0.3em 1em;
-    margin-top: 1em;
     &:nth-of-type(1) {
       background-color: #e4e4e4;
       margin-right: 0.5em;

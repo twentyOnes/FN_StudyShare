@@ -1,12 +1,8 @@
 import React from "react";
-import { Progress } from "antd";
 import { Card, Hello, Signup } from "./style";
+import Link from "next/link";
 
-type Props = {
-  user?: string;
-};
-
-const NonMember = ({ user }: Props) => {
+const NonMember = () => {
   return (
     <section css={Card}>
       <div css={Hello}>
@@ -18,8 +14,12 @@ const NonMember = ({ user }: Props) => {
       </div>
 
       <div css={Signup}>
-        <button type="button">회원가입</button>
-        <button type="button">로그인</button>
+        <Link href="/signup">
+          <a>회원가입</a>
+        </Link>
+        <Link href="/login">
+          <a>로그인</a>
+        </Link>
       </div>
     </section>
   );
