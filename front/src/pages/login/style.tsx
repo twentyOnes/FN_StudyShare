@@ -55,7 +55,7 @@ export const LoginLink = css`
   text-align: center;
   margin-top: 1.25em;
   font-size: 1.3rem;
-  padding: 0 8em;
+  padding: 0 2em;
   li {
     position: relative;
     a {

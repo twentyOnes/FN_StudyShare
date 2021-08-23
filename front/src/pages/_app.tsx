@@ -16,8 +16,8 @@ function MyApp({ Component, pageProps }: AppProps) {
 export default MyApp;
 
 const layout = css`
-  height: 100vh;
   width: 100%;
+  height: 100vh;
   border: 1px solid #dbdbdb;
   background: #fff;
   overflow-y: scroll;
