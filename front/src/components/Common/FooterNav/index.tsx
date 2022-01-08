@@ -9,8 +9,8 @@ const FooterNav = () => {
     <>
       <footer css={Footer}>
         <ul css={FooterWrap}>
-          <li className={router.asPath === "/feed" ? "active" : ""}>
-            <Link href="/feed">
+          <li className={router.asPath === "/Feed" ? "active" : ""}>
+            <Link href="/Feed">
               <a>
                 <svg
                   width="30"
@@ -29,8 +29,8 @@ const FooterNav = () => {
             </Link>
           </li>
 
-          <li className={router.asPath === "/todo" ? "active" : ""}>
-            <Link href="/todo">
+          <li className={router.asPath === "/Todo" ? "active" : ""}>
+            <Link href="/Todo">
               <a>
                 <svg
                   width="25"
@@ -49,8 +49,8 @@ const FooterNav = () => {
             </Link>
           </li>
 
-          <li className={router.asPath === "/mypage" ? "active" : ""}>
-            <Link href="/mypage">
+          <li className={router.asPath === "/MyPage" ? "active" : ""}>
+            <Link href="/MyPage">
               <a>
                 <svg
                   width="30"
@@ -69,8 +69,8 @@ const FooterNav = () => {
             </Link>
           </li>
 
-          <li className={router.asPath === "/setup" ? "active" : ""}>
-            <Link href="/setup">
+          <li className={router.asPath === "/SetUp" ? "active" : ""}>
+            <Link href="/SetUp">
               <a>
                 <svg
                   width="28"

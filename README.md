@@ -6,13 +6,10 @@
 
 ## [⭐️ 사이트 바로가기](https://studyshaer.vercel.app/)
 
-## 👩🏻‍💻 프론트앤드 기술스택
+## 👩🏻‍💻 기술스택
 
 - emotion (css-in-js)
 - typescript
-- react (next)
-- Redux
-- Redux-saga
+- Mobx
 - HTML Sementic MarkUp
 - 반응형 view port 단위 사용
--
